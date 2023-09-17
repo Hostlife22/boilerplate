@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "label": "Admin",
+    "x": 0,
+    "y": 0,
+    "deletable": false,
+    "permissions": ["see_all_reports","approve_requests"]
+  },
+  {
+    "id": "2",
+    "label": "Manager",
+    "x": 0,
+    "y": 100
+  },
+  {
+    "id": "3",
+    "label": "Member",
+    "x": 0,
+    "y": 200,
+    "deletable": false
+  }
+]

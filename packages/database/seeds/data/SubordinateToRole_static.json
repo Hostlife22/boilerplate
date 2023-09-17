@@ -1,0 +1,44 @@
+[
+  {
+    "subordinate_id": {
+      "type": "Role",
+      "where": {
+        "id": "2"
+      }
+    },
+    "role_id": {
+      "type": "Role",
+      "where": {
+        "id": "1"
+      }
+    }
+  },
+  {
+    "subordinate_id": {
+      "type": "Role",
+      "where": {
+        "id": "3"
+      }
+    },
+    "role_id": {
+      "type": "Role",
+      "where": {
+        "id": "1"
+      }
+    }
+  },
+  {
+    "subordinate_id": {
+      "type": "Role",
+      "where": {
+        "id": "3"
+      }
+    },
+    "role_id": {
+      "type": "Role",
+      "where": {
+        "id": "2"
+      }
+    }
+  }
+]

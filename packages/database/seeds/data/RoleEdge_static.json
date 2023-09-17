@@ -1,0 +1,30 @@
+[
+  {
+    "subordinate_id": {
+      "type": "Role",
+      "where": {
+        "id": "2"
+      }
+    },
+    "boss_id": {
+      "type": "Role",
+      "where": {
+        "id": "1"
+      }
+    }
+  },
+  {
+    "subordinate_id": {
+      "type": "Role",
+      "where": {
+        "id": "3"
+      }
+    },
+    "boss_id": {
+      "type": "Role",
+      "where": {
+        "id": "2"
+      }
+    }
+  }
+]

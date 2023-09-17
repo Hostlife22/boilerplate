@@ -1,0 +1,223 @@
+generator client {
+  provider        = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+}
+
+
+enum EUserStatus {
+  Active
+  Suspended
+  Inactive
+  Vacation
+}
+
+enum EImageTypeGender {
+  male
+  female
+}
+
+enum ESystemSettingsParams {
+  work_month_starts
+  team_invite
+}
+
+enum EProjectStatus {
+  Active
+  Frozen
+  Finished
+}
+
+enum ERequestType {
+  vacation
+  day_off
+}
+
+enum ERequestStatus {
+  on_review
+  approved
+  unfulfilled
+  fulfilled
+  rejected
+}
+
+enum ERolePermission {
+  see_all_reports
+  approve_requests
+}
+
+model Role {
+  id                String              @id @default(cuid())
+  label             String              @unique
+  x                 Float
+  y                 Float
+  deletable         Boolean             @default(true)
+  Bosses            RoleEdge[]          @relation("source")
+  Subordinates      RoleEdge[]          @relation("target")
+  AllSubordinates   SubordinateToRole[]
+  permissions       ERolePermission[]
+  SubordinateTo     SubordinateToRole[] @relation("subordinate")
+  User              User[]
+  MembersOnProjects MembersOnProjects[]
+}
+
+model SubordinateToRole {
+  subordinate_id String
+  Subordinate    Role   @relation("subordinate", fields: [subordinate_id], references: [id], onDelete: Cascade)
+  role_id        String
+  Role           Role   @relation(fields: [role_id], references: [id], onDelete: Cascade)
+
+  @@id([subordinate_id, role_id])
+}
+
+model RoleEdge {
+  boss_id        String
+  Boss           Role   @relation("source", fields: [boss_id], references: [id], onDelete: Cascade)
+  subordinate_id String
+  Subordinate    Role   @relation("target", fields: [subordinate_id], references: [id], onDelete: Cascade)
+
+  @@id([boss_id, subordinate_id])
+}
+
+model Account {
+  id                String @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model RefreshToken {
+  id         String   @id @default(cuid())
+  token      String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt()
+  user_agent String
+  ip         String
+  user_id    String?
+  User       User?    @relation(fields: [user_id], references: [id])
+
+  @@unique([user_agent, ip, user_id])
+}
+
+model User {
+  id                   String              @id @default(cuid())
+  created_at           DateTime            @default(now())
+  updated_at           DateTime            @updatedAt
+  firstName            String
+  lastName             String                 
+  email                String              @unique
+  password             String
+  phone_number         String?
+  telegram             String?
+  address              String?
+  is_email_verified    Boolean             @default(false)
+  verification_sent_at DateTime            @default(now())
+  last_password_reset  DateTime            @default(now())
+  avatar               Avatar?             @relation(fields: [avatar_id], references: [id])
+  avatar_id            String?
+  global_role_id       String              @default("3")
+  global_role          Role                @relation(fields: [global_role_id], references: [id], onDelete: SetDefault)
+  status               EUserStatus         @default(Active)
+  accounts             Account[]
+  projects             MembersOnProjects[]
+  projectsOwned        Project[]
+  reports              Report[]
+  RefreshToken         RefreshToken[]
+  Requests             Request[]
+  Approver             Approver[]
+}
+
+model Avatar {
+  id         String           @id @default(cuid())
+  created_at DateTime         @default(now())
+  updated_at DateTime         @updatedAt
+  deleted_at DateTime?
+  gender     EImageTypeGender
+  image      String
+  users      User[]
+}
+
+model Project {
+  id          String              @id @default(uuid())
+  status      EProjectStatus      @default(Active)
+  created_at  DateTime            @default(now())
+  updated_at  DateTime            @updatedAt
+  deleted_at  DateTime?
+  ownerId     String?
+  owner       User?               @relation(fields: [ownerId], references: [id])
+  title       String
+  description String?
+  members     MembersOnProjects[]
+  reports     Report[]
+  Approver    Approver[]
+}
+
+model MembersOnProjects {
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  projectId String
+  role_id   String  @default("3")
+  role      Role    @relation(fields: [role_id], references: [id], onDelete: SetDefault)
+
+  @@id([userId, projectId])
+}
+
+model Report {
+  id            String   @id @default(cuid())
+  created_at    DateTime @default(now()) @db.Date
+  updated_at    DateTime @updatedAt
+  userId        String?
+  user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  title         String
+  projectId     String?
+  project       Project? @relation(fields: [projectId], references: [id])
+  working_today String?
+  working_hours String
+  result        String?
+  issue         String?
+  tasks         String?
+  plans         String?
+  blockers      String?
+
+  @@unique([projectId, created_at, userId])
+}
+
+model Request {
+  id           String         @id @default(cuid())
+  type         ERequestType
+  description  String?
+  status       ERequestStatus @default(on_review)
+  created_at   DateTime       @default(now())
+  updated_at   DateTime       @updatedAt
+  start        DateTime       @db.Date
+  end          DateTime?      @db.Date
+  requester_id String
+  Requester    User           @relation(fields: [requester_id], references: [id])
+  Approver     Approver[]
+}
+
+model Approver {
+  id          String    @id @default(cuid())
+  approver_id String
+  Approver    User      @relation(fields: [approver_id], references: [id])
+  project_id  String?
+  Project     Project?  @relation(fields: [project_id], references: [id])
+  request_id  String
+  Request     Request   @relation(fields: [request_id], references: [id])
+  is_approved Boolean   @default(false)
+  approved_at DateTime?
+  rejected_at DateTime?
+}
+
+model SystemSettings {
+  key   ESystemSettingsParams @id
+  value String
+}
