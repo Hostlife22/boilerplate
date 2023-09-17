@@ -40,7 +40,7 @@
     "dayjs": "1.11.9",
     "isbot": "latest",
     "jsonwebtoken": "9.0.2",
-    "lucide-react": "^0.277.0",
+    "lucide-react": "^0.279.0",
     "nodemailer": "6.9.5",
     "nprogress": "^0.2.0",
     "query-string": "^8.1.0",
