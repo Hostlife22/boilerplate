@@ -63,7 +63,7 @@ importers:
       react-dom: 18.2.0
       react-dropzone: 14.2.3
       remix-flat-routes: 0.5.11
-      resend: ^0.17.0
+      resend: ^1.0.0
       sharp: ^0.32.0
       superjson: ^1.12.2
       tailwindcss: ^3.3.1
@@ -102,7 +102,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-dropzone: 14.2.3_react@18.2.0
-      resend: 0.17.2
+      resend: 1.1.0
       sharp: 0.32.5
       superjson: 1.13.1
       zod: 3.22.2
@@ -5290,16 +5290,6 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/1.4.0:
-    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==}
-    dependencies:
-      follow-redirects: 1.15.2
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
   /axios/1.5.0:
     resolution: {integrity: sha512-D4DdjDo5CY50Qms0qGQTTw6Q44jl7zRwY7bthds06pUGfChBCTcQs+N743eFWGEd6pRTMd6A+I87aWyFV5wiZQ==}
     dependencies:
@@ -10407,14 +10397,12 @@ packages:
     engines: {node: '>=0.10.5'}
     dev: true
 
-  /resend/0.17.2:
-    resolution: {integrity: sha512-lakm76u4MiIDeMF1s2tCmjtksOhwZOs4WcAXkA7aUTvl+63/h+0h6Q6WnkB8RGtj6GakUhQuUkiZshfXgtIrGw==}
+  /resend/1.1.0:
+    resolution: {integrity: sha512-it8TIDVT+/gAiJsUlv2tdHuvzwCCv4Zwu+udDqIm/dIuByQwe68TtFDcPccxqpSVVrNCBxxXLzsdT1tsV+P3GA==}
+    engines: {node: '>=18'}
     dependencies:
       '@react-email/render': 0.0.7
-      axios: 1.4.0
       type-fest: 3.13.0
-    transitivePeerDependencies:
-      - debug
     dev: false
 
   /resolve-alpn/1.2.1:
