@@ -8,7 +8,7 @@ const REGION = "eu-central-1"
 
 const client = new S3Client({
   region: REGION,
-  credentials: { accessKeyId: AWS_ACCESS_KEY_ID, secretAccessKey: AWS_SECRET_ACCESS_KEY },
+  credentials: { accessKeyId: AWS_ACCESS_KEY_ID!, secretAccessKey: AWS_SECRET_ACCESS_KEY! },
 })
 
 export function createSignedUrl(key: string) {
