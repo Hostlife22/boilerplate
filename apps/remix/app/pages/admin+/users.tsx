@@ -1,7 +1,7 @@
 import { type Prisma } from "@boilerplate/database"
 import { Tile } from "@boilerplate/ui"
-import { json, type LoaderArgs, type SerializeFrom } from "@vercel/remix"
 import { useLoaderData } from "@remix-run/react"
+import { json, type LoaderArgs, type SerializeFrom } from "@vercel/remix"
 import { Search } from "~/components/Search"
 import { Column, Table } from "~/components/Table"
 import { db } from "~/lib/db.server"
@@ -37,7 +37,7 @@ export default function Users() {
         <Table<User> data={users} take={TAKE} count={count}>
           <Column<User> sortKey="firstName" header="Name" row={(user) => user.firstName} />
           <Column<User> sortKey="email" header="Email" row={(user) => user.email} />
-          <Column<User> sortKey="createdAt" header="Signed up" row={(user) => user.createdAt} />
+          <Column<User> sortKey="createdAt" header="Signed up" row={(user) => user.created_at} />
         </Table>
       </Tile>
     </div>

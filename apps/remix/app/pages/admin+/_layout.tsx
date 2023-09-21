@@ -1,11 +1,11 @@
 import { join } from "@boilerplate/shared"
-import { json, redirect, type LoaderArgs } from "@vercel/remix"
 import { NavLink, Outlet } from "@remix-run/react"
+import { json, redirect, type LoaderArgs } from "@vercel/remix"
 import { getCurrentUser } from "~/services/auth/auth.server"
 
 export const loader = async ({ request }: LoaderArgs) => {
   const user = await getCurrentUser(request)
-  if (user.role !== "ADMIN") return redirect("/")
+  if (user.global_role_id !== "1") return redirect("/")
   return json(null)
 }
 
