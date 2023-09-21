@@ -1,8 +1,8 @@
+import { Outlet } from "@remix-run/react"
 import type { LoaderArgs } from "@vercel/remix"
 import { redirect } from "@vercel/remix"
-import { Outlet } from "@remix-run/react"
 
-import { db } from "~/lib/db.server"
+import { trpcSsrClient } from "~/lib/providers/TRPCProvider"
 import { useTheme } from "~/lib/theme"
 import { getUserSession } from "~/services/session/session.server"
 
@@ -19,8 +19,8 @@ export const headers = () => {
 export const loader = async ({ request }: LoaderArgs) => {
   const { userId } = await getUserSession(request)
   if (!userId) return null
-  const user = await db.user.findUnique({ where: { id: userId }, select: { id: true } })
-  if (user) return redirect("/")
+  const isAuthorized = await trpcSsrClient.auth.checkAuthorization.query({ userId })
+  if (isAuthorized) return redirect("/")
   return null
 }
 

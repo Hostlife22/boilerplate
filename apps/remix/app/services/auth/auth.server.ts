@@ -37,8 +37,6 @@ export type CurrentUser = Await<typeof getCurrentUser>
 
 export async function getMaybeUser(request: Request) {
   const { userId } = await getUserSession(request)
-  console.log(userId, "sd")
-
   if (!userId) return null
   const user = await db.user.findFirst({ where: { id: userId }, select: userSelectFields })
   if (!user) return null

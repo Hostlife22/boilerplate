@@ -1,13 +1,13 @@
+import { Link } from "@remix-run/react"
+import { TRPCClientError } from "@trpc/client"
 import type { ActionArgs, V2_MetaFunction } from "@vercel/remix"
 import { redirect } from "@vercel/remix"
-import { Link } from "@remix-run/react"
 import { z } from "zod"
 
 import { Form, FormButton, FormError, FormField } from "~/components/Form"
-import { db } from "~/lib/db.server"
 import { formError, validateFormData } from "~/lib/form"
+import { trpcSsrClient } from "~/lib/providers/TRPCProvider"
 import { badRequest } from "~/lib/remix"
-import { hashPassword } from "~/services/auth/password.server"
 import { FlashType, getFlashSession } from "~/services/session/flash.server"
 import { getUserSession } from "~/services/session/session.server"
 
@@ -42,11 +42,7 @@ export const action = async ({ request }: ActionArgs) => {
         const result = await validateFormData(registerSchema, formData)
         if (!result.success) return formError(result)
         const data = result.data
-        const email = data.email.toLowerCase().trim()
-        const existing = await db.user.findFirst({ where: { email } })
-        if (existing) return formError({ data, formError: "User with these details already exists" })
-        const password = await hashPassword(data.password)
-        const user = await db.user.create({ data: { ...data, email, password } })
+        const { user } = await trpcSsrClient.auth.register.mutate(data)
         const { setUser } = await getUserSession(request)
         const { createFlash } = await getFlashSession(request)
         const headers = new Headers([
@@ -61,12 +57,12 @@ export const action = async ({ request }: ActionArgs) => {
           ],
         ])
         return redirect("/", { headers })
-      } catch (e) {
-        return badRequest(e, {
+      } catch (error) {
+        if (error instanceof TRPCClientError) return formError({ formError: error.message })
+        return badRequest(error, {
           headers: { "Set-Cookie": await createFlash(FlashType.Error, "Register error") },
         })
       }
-
     default:
       break
   }

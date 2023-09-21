@@ -1,13 +1,12 @@
-import { type ActionArgs, redirect } from "@vercel/remix"
 import { Link } from "@remix-run/react"
+import { redirect, type ActionArgs } from "@vercel/remix"
 import { z } from "zod"
 
 import { Form, FormButton, FormError, FormField } from "~/components/Form"
-import { db } from "~/lib/db.server"
 import { formError, validateFormData } from "~/lib/form"
-import { createToken } from "~/lib/jwt.server"
+import { trpcSsrClient } from "~/lib/providers/TRPCProvider"
+import { badRequest } from "~/lib/remix"
 import { FlashType, getFlashSession } from "~/services/session/flash.server"
-import { sendResetPasswordEmail } from "~/services/user/user.mailer.server"
 
 export const headers = () => {
   return {
@@ -20,16 +19,18 @@ export const action = async ({ request }: ActionArgs) => {
   const resetSchema = z.object({ email: z.string().email("Invalid email") })
   const result = await validateFormData(resetSchema, formData)
   if (!result.success) return formError(result)
-  const data = result.data
-  const user = await db.user.findUnique({ where: { email: data.email } })
-  if (user) {
-    const token = createToken({ id: user.id })
-    await sendResetPasswordEmail(user, token)
-  }
   const { createFlash } = await getFlashSession(request)
-  return redirect("/login", {
-    headers: { "Set-Cookie": await createFlash(FlashType.Info, "Reset link sent to your email") },
-  })
+  const data = result.data
+  try {
+    await trpcSsrClient.auth.forgotPassword.mutate(data)
+    return redirect("/login", {
+      headers: { "Set-Cookie": await createFlash(FlashType.Info, "Reset link sent to your email") },
+    })
+  } catch (error) {
+    return badRequest(error, {
+      headers: { "Set-Cookie": await createFlash(FlashType.Error, "Reset password error") },
+    })
+  }
 }
 
 export default function ForgotPassword() {

@@ -1,14 +1,13 @@
+import { Link, useParams } from "@remix-run/react"
 import type { ActionArgs } from "@vercel/remix"
 import { redirect } from "@vercel/remix"
-import { Link, useParams } from "@remix-run/react"
 import { z } from "zod"
 
 import { Form, FormButton, FormError, FormField } from "~/components/Form"
-import { db } from "~/lib/db.server"
 import { formError, validateFormData } from "~/lib/form"
-import { decryptToken } from "~/lib/jwt.server"
 
-import { hashPassword } from "~/services/auth/password.server"
+import { trpcSsrClient } from "~/lib/providers/TRPCProvider"
+import { badRequest } from "~/lib/remix"
 import { FlashType, getFlashSession } from "~/services/session/flash.server"
 
 export const headers = () => {
@@ -26,13 +25,17 @@ export const action = async ({ request }: ActionArgs) => {
   const result = await validateFormData(resetPasswordSchema, formData)
   if (!result.success) return formError(result)
   const data = result.data
-  const payload = decryptToken<{ id: string }>(data.token)
-  const hashedPassword = await hashPassword(data.password)
-  await db.user.update({ where: { id: payload.id }, data: { password: hashedPassword } })
   const { createFlash } = await getFlashSession(request)
-  return redirect("/login", {
-    headers: { "Set-Cookie": await createFlash(FlashType.Info, "Password changed") },
-  })
+  try {
+    await trpcSsrClient.auth.resetPassword.mutate(data)
+    return redirect("/login", {
+      headers: { "Set-Cookie": await createFlash(FlashType.Info, "Password changed") },
+    })
+  } catch (error) {
+    return badRequest(error, {
+      headers: { "Set-Cookie": await createFlash(FlashType.Error, "Change password error") },
+    })
+  }
 }
 
 export default function ResetPassword() {

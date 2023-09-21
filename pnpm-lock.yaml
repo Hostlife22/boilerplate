@@ -20,7 +20,6 @@ importers:
       '@aws-sdk/s3-request-presigner': ^3.310.0
       '@boilerplate/api': workspace:*
       '@boilerplate/database': workspace:*
-      '@boilerplate/emails': workspace:*
       '@boilerplate/eslint-config': workspace:*
       '@boilerplate/shared': workspace:*
       '@boilerplate/tailwind-config': workspace:*
@@ -39,7 +38,6 @@ importers:
       '@trpc/server': ^10.16.0
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': 9.0.3
-      '@types/nodemailer': 6.4.10
       '@types/nprogress': ^0.2.0
       '@types/react': 18.2.22
       '@types/react-dom': 18.2.7
@@ -54,7 +52,6 @@ importers:
       isbot: latest
       jsonwebtoken: 9.0.2
       lucide-react: ^0.279.0
-      nodemailer: 6.9.5
       nprogress: ^0.2.0
       postcss: ^8.4.21
       prettier: ^3.0.0
@@ -63,20 +60,17 @@ importers:
       react-dom: 18.2.0
       react-dropzone: 14.2.3
       remix-flat-routes: 0.5.11
-      resend: ^1.0.0
       sharp: ^0.32.0
       superjson: ^1.12.2
       tailwindcss: ^3.3.1
       typescript: 5.2.2
       zod: 3.22.2
-      zustand: 4.4.1
     dependencies:
       '@aws-sdk/client-s3': 3.414.0
       '@aws-sdk/lib-storage': 3.414.0_@aws-sdk+client-s3@3.414.0
       '@aws-sdk/s3-request-presigner': 3.414.0
       '@boilerplate/api': link:../../packages/api
       '@boilerplate/database': link:../../packages/database
-      '@boilerplate/emails': link:../../packages/emails
       '@boilerplate/shared': link:../../packages/shared
       '@boilerplate/tailwind-config': link:../../packages/config/tailwind
       '@boilerplate/ui': link:../../packages/ui
@@ -96,17 +90,14 @@ importers:
       isbot: 3.7.0
       jsonwebtoken: 9.0.2
       lucide-react: 0.279.0_react@18.2.0
-      nodemailer: 6.9.5
       nprogress: 0.2.0
       query-string: 8.1.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-dropzone: 14.2.3_react@18.2.0
-      resend: 1.1.0
       sharp: 0.32.5
       superjson: 1.13.1
       zod: 3.22.2
-      zustand: 4.4.1_dpmmhqj3uzrk25jjzo7arvivk4
     devDependencies:
       '@boilerplate/eslint-config': link:../../packages/config/eslint
       '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
@@ -114,7 +105,6 @@ importers:
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.3.3
       '@types/bcryptjs': 2.4.4
       '@types/jsonwebtoken': 9.0.3
-      '@types/nodemailer': 6.4.10
       '@types/nprogress': 0.2.0
       '@types/react': 18.2.22
       '@types/react-dom': 18.2.7
@@ -131,26 +121,33 @@ importers:
   packages/api:
     specifiers:
       '@boilerplate/database': workspace:*
+      '@boilerplate/emails': workspace:*
       '@boilerplate/eslint-config': workspace:*
       '@trpc/server': ^10.16.0
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': 9.0.3
       '@types/node': ^18.15.3
+      '@types/nodemailer': 6.4.10
       bcryptjs: ^2.4.3
       dayjs: 1.11.10
       dotenv-cli: ^7.1.0
       eslint: 8.49.0
       jsonwebtoken: 9.0.2
+      nodemailer: 6.9.5
       prettier: ^3.0.0
+      resend: ^1.0.0
       superjson: ^1.12.2
       typescript: 5.2.2
       zod: 3.22.2
     dependencies:
       '@boilerplate/database': link:../database
+      '@boilerplate/emails': link:../emails
       '@trpc/server': 10.38.3
       bcryptjs: 2.4.3
       dayjs: 1.11.10
       jsonwebtoken: 9.0.2
+      nodemailer: 6.9.5
+      resend: 1.1.0
       superjson: 1.13.1
       zod: 3.22.2
     devDependencies:
@@ -158,6 +155,7 @@ importers:
       '@types/bcryptjs': 2.4.4
       '@types/jsonwebtoken': 9.0.3
       '@types/node': 18.17.17
+      '@types/nodemailer': 6.4.10
       dotenv-cli: 7.3.0
       eslint: 8.49.0
       prettier: 3.0.3
@@ -11854,26 +11852,6 @@ packages:
 
   /zod/3.22.2:
     resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
-    dev: false
-
-  /zustand/4.4.1_dpmmhqj3uzrk25jjzo7arvivk4:
-    resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      immer:
-        optional: true
-      react:
-        optional: true
-    dependencies:
-      '@types/react': 18.2.22
-      react: 18.2.0
-      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /zwitch/2.0.4:

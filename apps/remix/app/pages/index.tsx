@@ -2,21 +2,20 @@ import { Link, useFetcher, useLoaderData, useSubmit } from "@remix-run/react"
 import { json, type LoaderArgs } from "@vercel/remix"
 
 import {
-	Badge,
-	Button,
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-	IconButton,
-	Icons,
-	Limiter,
+  Badge,
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  IconButton,
+  Icons,
+  Limiter,
 } from "@boilerplate/ui"
 
 import { Menu, Moon, Sun } from "lucide-react"
 import { LinkButton } from "~/components/LinkButton"
 import { useTheme } from "~/lib/theme"
-import { trpc } from "~/lib/trpc"
 import { getMaybeUser } from "~/services/auth/auth.server"
 
 export const loader = async ({ request }: LoaderArgs) => {
@@ -28,8 +27,6 @@ export default function Home() {
   const user = useLoaderData<typeof loader>()
   const logoutSubmit = useSubmit()
   const themeFetcher = useFetcher()
-	const {data}= trpc.auth.me.useQuery();
-	console.log(data)
 
   const theme = useTheme()
   const isDark = theme === "dark"

@@ -4,10 +4,10 @@ import { createTransport } from "nodemailer"
 import type { SentMessageInfo } from "nodemailer/lib/smtp-transport"
 import type { CreateEmailOptions } from "resend/build/src/emails/interfaces"
 
-import { IS_PRODUCTION, SMTP_HOST, SMTP_PASSWORD, SMTP_SERVICE, SMTP_USERNAME } from "./config.server"
-import { resend } from "./resend.server"
+import { IS_PRODUCTION, SMTP_HOST, SMTP_PASSWORD, SMTP_SERVICE, SMTP_USERNAME } from "./config"
+import { resend } from "./resend"
 
-type Props = CreateEmailOptions & {
+type SendEmailProps = CreateEmailOptions & {
   react: React.ReactElement
 }
 
@@ -24,7 +24,7 @@ class Mailer {
     })
   }
 
-  async send(args: Props) {
+  async send(args: SendEmailProps) {
     try {
       if (IS_PRODUCTION) {
         await this.sendProd(args)
@@ -32,12 +32,11 @@ class Mailer {
         await resend.sendEmail(args)
       }
     } catch (err) {
-      // Sentry.captureException(err)
       console.log("Error sending mail:", err)
     }
   }
 
-  private async sendProd(args: Props) {
+  private async sendProd(args: SendEmailProps) {
     const html = render(args.react, { pretty: true })
     const text = render(args.react, { plainText: true })
     return this.transporter.sendMail({

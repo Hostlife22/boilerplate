@@ -1,13 +1,13 @@
+import { Link, useSearchParams } from "@remix-run/react"
+import { TRPCClientError } from "@trpc/client"
 import type { ActionArgs, V2_MetaFunction } from "@vercel/remix"
 import { redirect } from "@vercel/remix"
-import { Link, useSearchParams } from "@remix-run/react"
 import { z } from "zod"
 
 import { Form, FormButton, FormError, FormField } from "~/components/Form"
-import { db } from "~/lib/db.server"
 import { formError, validateFormData } from "~/lib/form"
+import { trpcSsrClient } from "~/lib/providers/TRPCProvider"
 
-import { comparePasswords } from "~/services/auth/password.server"
 import { getUserSession } from "~/services/session/session.server"
 
 export const meta: V2_MetaFunction = () => {
@@ -29,15 +29,16 @@ export const action = async ({ request }: ActionArgs) => {
   const result = await validateFormData(loginSchema, formData)
   if (!result.success) return formError(result)
   const data = result.data
-  const user = await db.user.findUnique({ where: { email: data.email } })
-  if (!user) return formError({ formError: "Incorrect email or password" })
-  const isCorrectPassword = await comparePasswords(data.password, user.password)
-  const redirectTo = data.redirectTo
-  if (!isCorrectPassword) return formError({ formError: "Incorrect email or password" })
-
-  const { setUser } = await getUserSession(request)
-  const headers = new Headers([["Set-Cookie", await setUser(user.id)]])
-  return redirect(redirectTo || "/", { headers })
+  try {
+    const { user } = await trpcSsrClient.auth.login.mutate(data)
+    const { setUser } = await getUserSession(request)
+    const headers = new Headers([["Set-Cookie", await setUser(user.id)]])
+    const redirectTo = data.redirectTo
+    return redirect(redirectTo || "/", { headers })
+  } catch (error) {
+    if (error instanceof TRPCClientError) return formError({ formError: error.message })
+    return formError({ formError: "Incorrect email or password" })
+  }
 }
 
 export default function Login() {

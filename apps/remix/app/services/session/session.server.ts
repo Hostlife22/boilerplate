@@ -21,7 +21,6 @@ export async function getUserSession(request: Request) {
   const commit = () => userStorage.commitSession(session)
   const destroy = () => userStorage.destroySession(session)
   const userId: string | null = session.get("userId") || null
-  console.log("userId", userId)
 
   const setUser = (id: string) => {
     session.set("userId", id)
