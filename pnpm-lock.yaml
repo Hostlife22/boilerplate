@@ -127,7 +127,7 @@ importers:
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': 9.0.3
       '@types/node': ^18.15.3
-      '@types/nodemailer': 6.4.10
+      '@types/nodemailer': 6.4.11
       bcryptjs: ^2.4.3
       dayjs: 1.11.10
       dotenv-cli: ^7.1.0
@@ -155,7 +155,7 @@ importers:
       '@types/bcryptjs': 2.4.4
       '@types/jsonwebtoken': 9.0.3
       '@types/node': 18.17.17
-      '@types/nodemailer': 6.4.10
+      '@types/nodemailer': 6.4.11
       dotenv-cli: 7.3.0
       eslint: 8.50.0
       prettier: 3.0.3
@@ -4645,8 +4645,8 @@ packages:
     resolution: {integrity: sha512-cOxcXsQ2sxiwkykdJqvyFS+MLQPLvIdwh5l6gNg8qF6s+C7XSkEWOZjK+XhUZd+mYvHV/180g2cnCcIl4l06Pw==}
     dev: true
 
-  /@types/nodemailer/6.4.10:
-    resolution: {integrity: sha512-oPW/IdhkU3FyZc1dzeqmS+MBjrjZNiiINnrEOrWALzccJlP5xTlbkNr2YnTnnyj9Eqm5ofjRoASEbrCYpA7BrA==}
+  /@types/nodemailer/6.4.11:
+    resolution: {integrity: sha512-Ld2c0frwpGT4VseuoeboCXQ7UJIkK3X7Lx/4YsZEiUHtHsthWAOCYtf6PAiLhMtfwV0cWJRabLBS3+LD8x6Nrw==}
     dependencies:
       '@types/node': 18.17.17
     dev: true
