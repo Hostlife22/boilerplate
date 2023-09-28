@@ -59,7 +59,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       react-dropzone: 14.2.3
-      remix-flat-routes: 0.5.11
+      remix-flat-routes: 0.5.12
       sharp: ^0.32.0
       superjson: ^1.12.2
       tailwindcss: ^3.3.1
@@ -114,7 +114,7 @@ importers:
       eslint: 8.50.0
       postcss: 8.4.29
       prettier: 3.0.3
-      remix-flat-routes: 0.5.11_@remix-run+dev@1.19.3
+      remix-flat-routes: 0.5.12_@remix-run+dev@1.19.3
       tailwindcss: 3.3.3
       typescript: 5.2.2
 
@@ -3928,10 +3928,10 @@ packages:
       set-cookie-parser: 2.6.0
       source-map: 0.7.4
 
-  /@remix-run/v1-route-convention/0.1.2_@remix-run+dev@1.19.3:
-    resolution: {integrity: sha512-vlcG2+uNVMf0euoFzM3BR3fgj0xYhjQPSufxK0sCCOXVGCteAqfXtcMQs2pZVYrKjeXLL+8ok2L9ThyZkhyt+A==}
+  /@remix-run/v1-route-convention/0.1.3_@remix-run+dev@1.19.3:
+    resolution: {integrity: sha512-RQhZ0IYRIfmPiXYHx2oYQH18Ho92z84wGZT1ykKpXPtFXIBov5X+/WeWSbBQghi3lcPoXdepff/tA9ImtvtT3g==}
     peerDependencies:
-      '@remix-run/dev': ^1.15.0
+      '@remix-run/dev': ^1.15.0 || ^2.0.0
     dependencies:
       '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
       minimatch: 7.4.6
@@ -10409,14 +10409,14 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remix-flat-routes/0.5.11_@remix-run+dev@1.19.3:
-    resolution: {integrity: sha512-606m3bUU9YuMDv9hPZ6v4Rei5BCKTCkkTGy2HPqGQEUT0mictqJSgkXAMl1fR4MisF1O846upHSRk9JDANoGjg==}
+  /remix-flat-routes/0.5.12_@remix-run+dev@1.19.3:
+    resolution: {integrity: sha512-NsskCt0euxpTNvLsCVW2UzOFK7YIeldQI00a+rIglgavAMUoFVe7tiPTkq4LJ2AXGsfIDq7kPa63ftqOLst+Dg==}
     hasBin: true
     peerDependencies:
       '@remix-run/dev': ^1.15.0 || ^2
     dependencies:
       '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
-      '@remix-run/v1-route-convention': 0.1.2_@remix-run+dev@1.19.3
+      '@remix-run/v1-route-convention': 0.1.3_@remix-run+dev@1.19.3
       minimatch: 5.1.6
     dev: true
 
