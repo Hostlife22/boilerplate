@@ -21,7 +21,7 @@
     "nodemailer": "6.9.5",
     "resend": "^1.0.0",
     "superjson": "^1.12.2",
-    "zod": "3.22.2"
+    "zod": "3.22.3"
   },
   "devDependencies": {
     "@boilerplate/eslint-config": "workspace:*",
