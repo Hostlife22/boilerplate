@@ -63,7 +63,7 @@
     "@types/sharp": "^0.31.1",
     "cssnano": "^6.0.0",
     "dotenv-cli": "^7.1.0",
-    "eslint": "8.51.0",
+    "eslint": "8.52.0",
     "postcss": "^8.4.21",
     "prettier": "^3.0.0",
     "remix-flat-routes": "0.6.1",
