@@ -201,15 +201,15 @@ importers:
   packages/database:
     specifiers:
       '@faker-js/faker': ^8.0.2
-      '@prisma/client': 5.5.0
+      '@prisma/client': 5.5.1
       '@types/node': ^18.15.3
       dotenv-cli: ^7.1.0
-      prisma: 5.5.0
+      prisma: 5.5.1
       ts-node: ^10.9.1
       typescript: 5.2.2
     dependencies:
-      '@prisma/client': 5.5.0_prisma@5.5.0
-      prisma: 5.5.0
+      '@prisma/client': 5.5.1_prisma@5.5.1
+      prisma: 5.5.1
     devDependencies:
       '@faker-js/faker': 8.0.2
       '@types/node': 18.17.17
@@ -2828,8 +2828,8 @@ packages:
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
     dev: false
 
-  /@prisma/client/5.5.0_prisma@5.5.0:
-    resolution: {integrity: sha512-JiCj/h79PRawWiBVa4Ng4tBaKMrfJgUwuRrZi4NuQRd58gWIP4kEYMqIidpUrab3dU2NM617pWRG2avX+dh+Sg==}
+  /@prisma/client/5.5.1_prisma@5.5.1:
+    resolution: {integrity: sha512-Yvcwx1/Q0nIdv2jvH/4pyTRl5I+76/ef0C3xCrAkBKTIjXHiRptbyyK/+CWEaBY9yE98MIdi9gwZcR3C22eTuQ==}
     engines: {node: '>=16.13'}
     requiresBuild: true
     peerDependencies:
@@ -2839,15 +2839,15 @@ packages:
         optional: true
     dependencies:
       '@prisma/engines-version': 5.5.0-19.475c616176945d72f4330c92801f0c5e6398dc0f
-      prisma: 5.5.0
+      prisma: 5.5.1
     dev: false
 
   /@prisma/engines-version/5.5.0-19.475c616176945d72f4330c92801f0c5e6398dc0f:
     resolution: {integrity: sha512-/1orOUq7I54ISYBJockYB15FmF/VkCBeFzYYkWyLtBl2tLlJWHmA3NEUBM+wSmXGLK78BmuSNHrLbf8bmXkukQ==}
     dev: false
 
-  /@prisma/engines/5.5.0:
-    resolution: {integrity: sha512-WX+8l4sJuWeS3A/5WqJpdBHp32UzUticiKwUWbFggcd6/sqGtCiiaFmXYmNw6Au2O6hjSX37Y07Vu2ZhP9cmWg==}
+  /@prisma/engines/5.5.1:
+    resolution: {integrity: sha512-6P4bTYb7WCWwHW50tsJvZTeZIM7HotuwDEY61wAX46b69eMbuXTsNB9dquEmwKaiG7ggk+igOoH8chSO3+/VkQ==}
     requiresBuild: true
     dev: false
 
@@ -10030,13 +10030,13 @@ packages:
       js-beautify: 1.14.9
     dev: false
 
-  /prisma/5.5.0:
-    resolution: {integrity: sha512-QyMMh1WQiGU07Iz3Q8jd6y5KlomGLDVb4etkMWpQ4EmDAaY+zGgNHmBk2MfRPb0A+un1Ior1nZWZorfnKD6E5A==}
+  /prisma/5.5.1:
+    resolution: {integrity: sha512-6oln3L3/9kB9GqngIbSCpoXaZAk65y7hqEOj9g+9pkTYi/fVxCQzQ6ivnePVUoFhp/M1BBjexQepw1ODqnAC5Q==}
     engines: {node: '>=16.13'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@prisma/engines': 5.5.0
+      '@prisma/engines': 5.5.1
     dev: false
 
   /process-nextick-args/2.0.1:
