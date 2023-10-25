@@ -8,8 +8,8 @@
   ],
   "sideEffects": false,
   "dependencies": {
-    "@prisma/client": "5.5.0",
-    "prisma": "5.5.0"
+    "@prisma/client": "5.5.1",
+    "prisma": "5.5.1"
   },
   "scripts": {
     "dev": "pnpm with-env prisma studio",
