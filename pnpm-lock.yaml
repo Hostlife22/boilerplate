@@ -231,7 +231,7 @@ importers:
       '@react-email/html': 0.0.6
       '@react-email/img': 0.0.6
       '@react-email/link': 0.0.6
-      '@react-email/render': 0.0.8
+      '@react-email/render': 0.0.9
       '@react-email/tailwind': 0.0.12
       '@react-email/text': 0.0.6
       eslint: 8.52.0
@@ -250,7 +250,7 @@ importers:
       '@react-email/html': 0.0.6
       '@react-email/img': 0.0.6
       '@react-email/link': 0.0.6
-      '@react-email/render': 0.0.8
+      '@react-email/render': 0.0.9
       '@react-email/tailwind': 0.0.12
       '@react-email/text': 0.0.6
     devDependencies:
@@ -3729,8 +3729,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@react-email/render/0.0.8:
-    resolution: {integrity: sha512-DwrCG5t2nXlXYcchZz8h4NOhBYoU5Rpogz54Z18mANUmwMtzl88x6NwRDwzZoAVAlTLOPqvsQbYtWHvfpTfmmA==}
+  /@react-email/render/0.0.9:
+    resolution: {integrity: sha512-nrim7wiACnaXsGtL7GF6jp3Qmml8J6vAjAH88jkC8lIbfNZaCyuPQHANjyYIXlvQeAbsWADQJFZgOHUqFqjh/A==}
     engines: {node: '>=18.0.0'}
     dependencies:
       html-to-text: 9.0.5
