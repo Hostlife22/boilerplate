@@ -267,11 +267,11 @@ importers:
       '@types/node': ^18.15.3
       eslint: 8.54.0
       prettier: ^3.0.0
-      tailwind-merge: ^1.10.0
+      tailwind-merge: ^2.0.0
       typescript: 5.3.2
     dependencies:
       '@boilerplate/database': link:../database
-      tailwind-merge: 1.14.0
+      tailwind-merge: 2.0.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/node': 18.17.17
@@ -304,7 +304,7 @@ importers:
       prettier: ^3.0.0
       react: 18.2.0
       react-dom: 18.2.0
-      tailwind-merge: ^1.10.0
+      tailwind-merge: ^2.0.0
       tailwindcss: ^3.3.1
       tailwindcss-radix: ^2.8.0
       typescript: 5.3.2
@@ -324,7 +324,7 @@ importers:
       lucide-react: 0.292.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tailwind-merge: 1.14.0
+      tailwind-merge: 2.0.0
       tailwindcss-radix: 2.8.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
@@ -2199,6 +2199,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
+
+  /@babel/runtime/7.23.4:
+    resolution: {integrity: sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
 
   /@babel/template/7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -10979,8 +10986,10 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /tailwind-merge/1.14.0:
-    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+  /tailwind-merge/2.0.0:
+    resolution: {integrity: sha512-WO8qghn9yhsldLSg80au+3/gY9E4hFxIvQ3qOmlpXnqpDKoMruKfi/56BbbMg6fHTQJ9QD3cc79PoWqlaQE4rw==}
+    dependencies:
+      '@babel/runtime': 7.23.4
     dev: false
 
   /tailwindcss-animate/1.0.7_tailwindcss@3.3.3:
