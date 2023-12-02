@@ -225,7 +225,7 @@ importers:
       '@react-email/column': 0.0.9
       '@react-email/container': 0.0.11
       '@react-email/font': ^0.0.5
-      '@react-email/head': 0.0.6
+      '@react-email/head': 0.0.7
       '@react-email/heading': 0.0.9
       '@react-email/hr': 0.0.6
       '@react-email/html': 0.0.6
@@ -244,7 +244,7 @@ importers:
       '@react-email/column': 0.0.9
       '@react-email/container': 0.0.11
       '@react-email/font': 0.0.5
-      '@react-email/head': 0.0.6
+      '@react-email/head': 0.0.7
       '@react-email/heading': 0.0.9
       '@react-email/hr': 0.0.6
       '@react-email/html': 0.0.6
@@ -3870,8 +3870,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@react-email/head/0.0.6:
-    resolution: {integrity: sha512-9BrBDalb34nBOmmQVQc7/pjJotcuAeC3rhBl4G88Ohiipuv15vPIKqwy8vPJcFNi4l7yGlitfG3EESIjkLkoIw==}
+  /@react-email/head/0.0.7:
+    resolution: {integrity: sha512-IcXL4jc0H1qzAXJCD9ajcRFBQdbUHkjKJyiUeogpaYSVZSq6cVDWQuGaI23TA9k+pI2TFeQimogUFb3Kgeeudw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: 18.2.0
