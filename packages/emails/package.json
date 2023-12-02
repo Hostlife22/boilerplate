@@ -13,7 +13,7 @@
   "dependencies": {
     "@boilerplate/tailwind-config": "workspace:*",
     "@react-email/button": "0.0.13",
-    "@react-email/column": "0.0.8",
+    "@react-email/column": "0.0.9",
     "@react-email/container": "0.0.10",
     "@react-email/font": "^0.0.4",
     "@react-email/head": "0.0.6",
