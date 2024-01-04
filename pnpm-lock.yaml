@@ -51,7 +51,7 @@ importers:
       eslint: 8.56.0
       isbot: latest
       jsonwebtoken: 9.0.2
-      lucide-react: ^0.303.0
+      lucide-react: ^0.304.0
       nprogress: ^0.2.0
       postcss: ^8.4.21
       prettier: ^3.0.0
@@ -87,9 +87,9 @@ importers:
       axios: 1.5.0
       bcryptjs: 2.4.3
       dayjs: 1.11.10
-      isbot: 3.7.1-deprecated
+      isbot: 4.3.0
       jsonwebtoken: 9.0.2
-      lucide-react: 0.303.0_react@18.2.0
+      lucide-react: 0.304.0_react@18.2.0
       nprogress: 0.2.0
       query-string: 8.1.0
       react: 18.2.0
@@ -299,7 +299,7 @@ importers:
       class-variance-authority: ^0.7.0
       dotenv-cli: ^7.1.0
       eslint: 8.56.0
-      lucide-react: ^0.303.0
+      lucide-react: ^0.304.0
       postcss: ^8.4.21
       prettier: ^3.0.0
       react: 18.2.0
@@ -321,7 +321,7 @@ importers:
       '@radix-ui/react-toast': 1.1.4_vmlo3t4fedly2n2k3xv4356dvi
       '@radix-ui/react-tooltip': 1.0.6_vmlo3t4fedly2n2k3xv4356dvi
       class-variance-authority: 0.7.0
-      lucide-react: 0.303.0_react@18.2.0
+      lucide-react: 0.304.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwind-merge: 1.14.0
@@ -8318,9 +8318,9 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/3.7.1-deprecated:
-    resolution: {integrity: sha512-i1IhrvmVpZRMHpm55i8lhuR8xVUUlxgOYa+NuW1iL+yNdUm0wKXxpAkMenlGuOXIkXvZc7IZnIRx2/jBZ5RNLw==}
-    engines: {node: '>=12'}
+  /isbot/4.3.0:
+    resolution: {integrity: sha512-cohu4X66cXP120xwF+UubL+BQzOQLN1O0DOPOmkci6elgZ7o6XIn8B3FARk59RL0aX3cGTq8Ta7MVOWpay3rbw==}
+    engines: {node: '>=18'}
     dev: false
 
   /isexe/2.0.0:
@@ -8636,8 +8636,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /lucide-react/0.303.0_react@18.2.0:
-    resolution: {integrity: sha512-B0B9T3dLEFBYPCUlnUS1mvAhW1craSbF9HO+JfBjAtpFUJ7gMIqmEwNSclikY3RiN2OnCkj/V1ReAQpaHae8Bg==}
+  /lucide-react/0.304.0_react@18.2.0:
+    resolution: {integrity: sha512-BlaKhPYo2hcZDjM34DpvypC3DoQ2x1NDugocmJP/G7y/hUmoV+/gK/4eXkIWaWwJ5naD1EBdF5n+XDCiUNXQ2w==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
