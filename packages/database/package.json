@@ -9,7 +9,7 @@
   "sideEffects": false,
   "dependencies": {
     "@prisma/client": "5.8.1",
-    "prisma": "5.8.1"
+    "prisma": "5.9.0"
   },
   "scripts": {
     "dev": "pnpm with-env prisma studio",
