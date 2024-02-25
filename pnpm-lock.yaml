@@ -96,7 +96,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       react-dropzone: 14.2.3_react@18.2.0
       sharp: 0.33.2
-      superjson: 1.13.1
+      superjson: 1.13.3
       zod: 3.22.4
     devDependencies:
       '@boilerplate/eslint-config': link:../../packages/config/eslint
@@ -148,7 +148,7 @@ importers:
       jsonwebtoken: 9.0.2
       nodemailer: 6.9.10
       resend: 1.1.0
-      superjson: 1.13.1
+      superjson: 1.13.3
       zod: 3.22.4
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
@@ -4709,7 +4709,7 @@ packages:
       '@tanstack/react-query': 4.35.3_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      superjson: 1.13.1
+      superjson: 1.13.3
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
@@ -6083,7 +6083,7 @@ packages:
     resolution: {integrity: sha512-yCEafptTtb4bk7GLEQoM8KVJpxAfdBJYaXyzQEgQQQgYrZiDp8SJmGKlYza6CYjEDNstAdNdKA3UuoULlEbS6w==}
     engines: {node: '>=12.13'}
     dependencies:
-      is-what: 4.1.15
+      is-what: 4.1.16
     dev: false
 
   /core-js-compat/3.32.2:
@@ -8343,8 +8343,8 @@ packages:
       get-intrinsic: 1.2.1
     dev: true
 
-  /is-what/4.1.15:
-    resolution: {integrity: sha512-uKua1wfy3Yt+YqsD6mTUEa2zSi3G1oPlqTflgaPJ7z63vUGN5pxFpnQfeSLMFnJDEsdvOtkp1rUWkYjB4YfhgA==}
+  /is-what/4.1.16:
+    resolution: {integrity: sha512-ZhMwEosbFJkA0YhFnNDgTM4ZxDRsS6HqTo7qsZM08fehyRYIYa0yHu5R6mgo1n/8MgaPBXiPimPD77baVFYg+A==}
     engines: {node: '>=12.13'}
     dev: false
 
@@ -11116,8 +11116,8 @@ packages:
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
 
-  /superjson/1.13.1:
-    resolution: {integrity: sha512-AVH2eknm9DEd3qvxM4Sq+LTCkSXE2ssfh1t11MHMXyYXFQyQ1HLgVvV+guLTsaQnJU3gnaVo34TohHPulY/wLg==}
+  /superjson/1.13.3:
+    resolution: {integrity: sha512-mJiVjfd2vokfDxsQPOwJ/PtanO87LhpYY88ubI5dUB1Ab58Txbyje3+jpm+/83R/fevaq/107NNhtYBLuoTrFg==}
     engines: {node: '>=10'}
     dependencies:
       copy-anything: 3.0.5
