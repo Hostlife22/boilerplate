@@ -126,7 +126,7 @@ importers:
       '@trpc/server': ^10.16.0
       '@types/bcryptjs': ^2.4.2
       '@types/jsonwebtoken': 9.0.6
-      '@types/node': ^18.15.3
+      '@types/node': ^20.0.0
       '@types/nodemailer': 6.4.14
       bcryptjs: ^2.4.3
       dayjs: 1.11.10
@@ -154,7 +154,7 @@ importers:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/bcryptjs': 2.4.6
       '@types/jsonwebtoken': 9.0.6
-      '@types/node': 18.19.21
+      '@types/node': 20.11.23
       '@types/nodemailer': 6.4.14
       dotenv-cli: 7.3.0
       eslint: 8.57.0
@@ -202,7 +202,7 @@ importers:
     specifiers:
       '@faker-js/faker': ^8.0.2
       '@prisma/client': 5.10.2
-      '@types/node': ^18.15.3
+      '@types/node': ^20.0.0
       dotenv-cli: ^7.1.0
       prisma: 5.10.2
       ts-node: ^10.9.1
@@ -212,9 +212,9 @@ importers:
       prisma: 5.10.2
     devDependencies:
       '@faker-js/faker': 8.4.1
-      '@types/node': 18.19.21
+      '@types/node': 20.11.23
       dotenv-cli: 7.3.0
-      ts-node: 10.9.1_3a4cfumgbkbpgqwvswexy452im
+      ts-node: 10.9.1_h3hxf4hqhlgz6sgrof6i2iukqe
       typescript: 5.3.3
 
   packages/emails:
@@ -264,7 +264,7 @@ importers:
     specifiers:
       '@boilerplate/database': workspace:*
       '@boilerplate/eslint-config': workspace:*
-      '@types/node': ^18.15.3
+      '@types/node': ^20.0.0
       eslint: 8.57.0
       prettier: ^3.0.0
       tailwind-merge: ^1.10.0
@@ -274,7 +274,7 @@ importers:
       tailwind-merge: 1.14.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
-      '@types/node': 18.19.21
+      '@types/node': 20.11.23
       eslint: 8.57.0
       prettier: 3.2.5
       typescript: 5.3.3
@@ -5032,12 +5032,6 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node/18.19.21:
-    resolution: {integrity: sha512-2Q2NeB6BmiTFQi4DHBzncSoq/cJMLDdhPaAoJFnFCyD9a8VPZRf7a1GAwp1Edb7ROaZc5Jz/tnZyL6EsWMRaqw==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
-
   /@types/node/20.11.23:
     resolution: {integrity: sha512-ZUarKKfQuRILSNYt32FuPL20HS7XwNT7/uRwSV8tiHWfyyVwDLYZNF6DZKc2bove++pgfsXn9sUwII/OsQ82cQ==}
     dependencies:
@@ -5047,7 +5041,7 @@ packages:
   /@types/nodemailer/6.4.14:
     resolution: {integrity: sha512-fUWthHO9k9DSdPCSPRqcu6TWhYyxTBg382vlNIttSe9M7XfsT06y0f24KHXtbnijPGGRIcVvdKHTNikOI6qiHA==}
     dependencies:
-      '@types/node': 18.19.21
+      '@types/node': 20.11.23
     dev: true
 
   /@types/nprogress/0.2.3:
@@ -11468,7 +11462,7 @@ packages:
   /ts-interface-checker/0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  /ts-node/10.9.1_3a4cfumgbkbpgqwvswexy452im:
+  /ts-node/10.9.1_h3hxf4hqhlgz6sgrof6i2iukqe:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -11487,7 +11481,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.19.21
+      '@types/node': 20.11.23
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
