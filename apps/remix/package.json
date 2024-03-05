@@ -59,7 +59,7 @@
     "@types/jsonwebtoken": "9.0.6",
     "@types/nprogress": "^0.2.0",
     "@types/react": "18.2.63",
-    "@types/react-dom": "18.2.19",
+    "@types/react-dom": "18.2.20",
     "@types/sharp": "^0.31.1",
     "cssnano": "^6.0.0",
     "dotenv-cli": "^7.1.0",
