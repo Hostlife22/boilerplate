@@ -26,7 +26,7 @@ importers:
       '@boilerplate/ui': workspace:*
       '@fontsource/poppins': ^5.0.0
       '@remix-run/dev': 1.19.3
-      '@remix-run/eslint-config': 2.8.0
+      '@remix-run/eslint-config': 2.8.1
       '@remix-run/node': 1.19.3
       '@remix-run/react': 1.19.3
       '@remix-run/serve': 1.19.3
@@ -101,7 +101,7 @@ importers:
     devDependencies:
       '@boilerplate/eslint-config': link:../../packages/config/eslint
       '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
-      '@remix-run/eslint-config': 2.8.0_3itoh7o7cc3icupjxo5536bk24
+      '@remix-run/eslint-config': 2.8.1_3itoh7o7cc3icupjxo5536bk24
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.1
       '@types/bcryptjs': 2.4.6
       '@types/jsonwebtoken': 9.0.6
@@ -4134,8 +4134,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@remix-run/eslint-config/2.8.0_3itoh7o7cc3icupjxo5536bk24:
-    resolution: {integrity: sha512-4y5TxhWbivKT2g8d2wciWSns6KhuvJPXoLuuBa2v3At20LxqWdyqErZfPHPrecXHjl/vJpSAGOGXAU1WuS39kg==}
+  /@remix-run/eslint-config/2.8.1_3itoh7o7cc3icupjxo5536bk24:
+    resolution: {integrity: sha512-lH5/H8oznYk0pVhrNTBt7+++U+guEKOYFwK1aO3zoeyrBtSc7OdX1KWWFlJw0IdGVMSKDqnW3U0n1VbIa4sX/g==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: ^8.0.0
