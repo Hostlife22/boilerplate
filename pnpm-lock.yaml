@@ -110,7 +110,7 @@ importers:
       '@types/react-dom': 18.2.21
       '@types/sharp': 0.31.1
       cssnano: 6.0.1_postcss@8.4.35
-      dotenv-cli: 7.4.0
+      dotenv-cli: 7.4.1
       eslint: 8.57.0
       postcss: 8.4.35
       prettier: 3.2.5
@@ -156,7 +156,7 @@ importers:
       '@types/jsonwebtoken': 9.0.6
       '@types/node': 18.19.22
       '@types/nodemailer': 6.4.14
-      dotenv-cli: 7.4.0
+      dotenv-cli: 7.4.1
       eslint: 8.57.0
       prettier: 3.2.5
       typescript: 5.4.2
@@ -213,7 +213,7 @@ importers:
     devDependencies:
       '@faker-js/faker': 8.4.1
       '@types/node': 18.19.22
-      dotenv-cli: 7.4.0
+      dotenv-cli: 7.4.1
       ts-node: 10.9.1_2p3urhmshj3ussjzyowagp53r4
       typescript: 5.4.2
 
@@ -331,7 +331,7 @@ importers:
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.1
       '@types/react': 18.2.64
       '@types/react-dom': 18.2.21
-      dotenv-cli: 7.4.0
+      dotenv-cli: 7.4.1
       eslint: 8.57.0
       postcss: 8.4.35
       prettier: 3.2.5
@@ -6615,8 +6615,8 @@ packages:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  /dotenv-cli/7.4.0:
-    resolution: {integrity: sha512-fZGFOGCC5rEz1OJ0Pp+1LN8y78ClMcyXDmBEmjvJwqCqZVsPHcQ85bLCh5hZ4Bqotw4dptXOLvvw0vxm2MD30g==}
+  /dotenv-cli/7.4.1:
+    resolution: {integrity: sha512-fE1aywjRrWGxV3miaiUr3d2zC/VAiuzEGghi+QzgIA9fEf/M5hLMaRSXb4IxbUAwGmaLi0IozdZddnVU96acag==}
     hasBin: true
     dependencies:
       cross-spawn: 7.0.3
