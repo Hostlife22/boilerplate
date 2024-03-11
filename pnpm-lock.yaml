@@ -177,7 +177,7 @@ importers:
       eslint-config-prettier: 9.1.0_eslint@8.57.0
       eslint-plugin-import: 2.29.1_ihik6vylqi7jqejlk75ki7mwxa
       eslint-plugin-simple-import-sort: 10.0.0_eslint@8.57.0
-      eslint-plugin-tailwindcss: 3.14.3
+      eslint-plugin-tailwindcss: 3.15.0
 
   packages/config/tailwind:
     specifiers:
@@ -7250,8 +7250,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-tailwindcss/3.14.3:
-    resolution: {integrity: sha512-1MKT8CrVuqVJleHxb7ICHsF2QwO0G+VJ28athTtlcOkccp0qmwK7nCUa1C9paCZ+VVgQU4fonsjLz/wUxoMHJQ==}
+  /eslint-plugin-tailwindcss/3.15.0:
+    resolution: {integrity: sha512-mRs8OGJMxkCl8cD0wGjr9NbcRYJCN3D1TfgmIGb1L+3opqYyTT1jjVau1s6SUdVJqci3EfbxG60TJQtgqfEtTw==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
@@ -7911,7 +7911,7 @@ packages:
       '@types/glob': 7.2.0
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.3.2
+      fast-glob: 3.2.11
       glob: 7.2.3
       ignore: 5.2.4
       merge2: 1.4.1
