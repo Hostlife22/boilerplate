@@ -154,7 +154,7 @@ importers:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/bcryptjs': 2.4.6
       '@types/jsonwebtoken': 9.0.6
-      '@types/node': 18.19.24
+      '@types/node': 18.19.25
       '@types/nodemailer': 6.4.14
       dotenv-cli: 7.4.1
       eslint: 8.57.0
@@ -212,9 +212,9 @@ importers:
       prisma: 5.11.0
     devDependencies:
       '@faker-js/faker': 8.4.1
-      '@types/node': 18.19.24
+      '@types/node': 18.19.25
       dotenv-cli: 7.4.1
-      ts-node: 10.9.1_sunb6nos2ykdhcie6osu43c454
+      ts-node: 10.9.1_dpp5vwaacofo4ey2yyh2lbx3zm
       typescript: 5.4.2
 
   packages/emails:
@@ -274,7 +274,7 @@ importers:
       tailwind-merge: 1.14.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
-      '@types/node': 18.19.24
+      '@types/node': 18.19.25
       eslint: 8.57.0
       prettier: 3.2.5
       typescript: 5.4.2
@@ -4938,7 +4938,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.2
       '@types/keyv': 3.1.4
-      '@types/node': 20.11.27
+      '@types/node': 20.11.29
       '@types/responselike': 1.0.0
     dev: true
 
@@ -4971,7 +4971,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.11.27
+      '@types/node': 20.11.29
     dev: true
 
   /@types/hast/2.3.6:
@@ -5001,7 +5001,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.29
     dev: true
 
   /@types/mdast/3.0.12:
@@ -5032,14 +5032,14 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node/18.19.24:
-    resolution: {integrity: sha512-eghAz3gnbQbvnHqB+mgB2ZR3aH6RhdEmHGS48BnV75KceQPHqabkxKI0BbUSsqhqy2Ddhc2xD/VAR9ySZd57Lw==}
+  /@types/node/18.19.25:
+    resolution: {integrity: sha512-NrNXHJCexZtcbR9K1hsv1fSbwAwnhv7ql7l331aKvW0sej5H0NY1o64BHe0AA2ZoQuTm7NE6fyNW079MOWXe4Q==}
     dependencies:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node/20.11.27:
-    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
+  /@types/node/20.11.29:
+    resolution: {integrity: sha512-P99thMkD/1YkCvAtOd6/zGedKNA0p2fj4ZpjCzcNiSCBWgm3cNRTBfa/qjFnsKkkojxu4vVLtWpesnZ9+ap+gA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -5047,7 +5047,7 @@ packages:
   /@types/nodemailer/6.4.14:
     resolution: {integrity: sha512-fUWthHO9k9DSdPCSPRqcu6TWhYyxTBg382vlNIttSe9M7XfsT06y0f24KHXtbnijPGGRIcVvdKHTNikOI6qiHA==}
     dependencies:
-      '@types/node': 18.19.24
+      '@types/node': 18.19.25
     dev: true
 
   /@types/nprogress/0.2.3:
@@ -5072,7 +5072,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.29
     dev: true
 
   /@types/scheduler/0.16.3:
@@ -7456,7 +7456,7 @@ packages:
     resolution: {integrity: sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==}
     engines: {node: '>= 0.8'}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.29
       require-like: 0.1.2
     dev: true
 
@@ -11473,7 +11473,7 @@ packages:
   /ts-interface-checker/0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  /ts-node/10.9.1_sunb6nos2ykdhcie6osu43c454:
+  /ts-node/10.9.1_dpp5vwaacofo4ey2yyh2lbx3zm:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -11492,7 +11492,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.19.24
+      '@types/node': 18.19.25
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
