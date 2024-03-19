@@ -66,9 +66,9 @@ importers:
       typescript: 5.4.2
       zod: 3.22.4
     dependencies:
-      '@aws-sdk/client-s3': 3.536.0
-      '@aws-sdk/lib-storage': 3.414.0_@aws-sdk+client-s3@3.536.0
-      '@aws-sdk/s3-request-presigner': 3.536.0
+      '@aws-sdk/client-s3': 3.537.0
+      '@aws-sdk/lib-storage': 3.414.0_@aws-sdk+client-s3@3.537.0
+      '@aws-sdk/s3-request-presigner': 3.537.0
       '@boilerplate/api': link:../../packages/api
       '@boilerplate/database': link:../../packages/database
       '@boilerplate/shared': link:../../packages/shared
@@ -426,8 +426,8 @@ packages:
       tslib: 1.14.1
     dev: false
 
-  /@aws-sdk/client-s3/3.536.0:
-    resolution: {integrity: sha512-UM5txJxq8qKzLDVuW9c904bpb7+u1jOeyJITLz79WpyHSOP6ERHoTx/ltEuGJ4zQVazfkgthqR0lIn09sXEEuw==}
+  /@aws-sdk/client-s3/3.537.0:
+    resolution: {integrity: sha512-EMPN2toHz1QtSiDeLKS1zrazh+8J0g1Y5t5lCq25iTXqCSV9vB2jCKwG5+OB6L5tAKkwyl1uZofeWLmdFkztEg==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -445,7 +445,7 @@ packages:
       '@aws-sdk/middleware-recursion-detection': 3.535.0
       '@aws-sdk/middleware-sdk-s3': 3.535.0
       '@aws-sdk/middleware-signing': 3.535.0
-      '@aws-sdk/middleware-ssec': 3.535.0
+      '@aws-sdk/middleware-ssec': 3.537.0
       '@aws-sdk/middleware-user-agent': 3.535.0
       '@aws-sdk/region-config-resolver': 3.535.0
       '@aws-sdk/signature-v4-multi-region': 3.535.0
@@ -755,13 +755,13 @@ packages:
       - aws-crt
     dev: false
 
-  /@aws-sdk/lib-storage/3.414.0_@aws-sdk+client-s3@3.536.0:
+  /@aws-sdk/lib-storage/3.414.0_@aws-sdk+client-s3@3.537.0:
     resolution: {integrity: sha512-R2ZdLVWa+EhMYrta61c0fNgnRpsIWr4zj1rCnC0ZlTwP5J3jiAaRHPMVgd9Jgo1u91y8nHVYaLdIJ6EQDN0scg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@aws-sdk/client-s3': ^3.0.0
     dependencies:
-      '@aws-sdk/client-s3': 3.536.0
+      '@aws-sdk/client-s3': 3.537.0
       '@smithy/abort-controller': 2.0.8
       '@smithy/middleware-endpoint': 2.0.8
       '@smithy/smithy-client': 2.1.5
@@ -874,8 +874,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@aws-sdk/middleware-ssec/3.535.0:
-    resolution: {integrity: sha512-QAQ++9my7VZzusUPOFcUMdhTnjpGRyy/OvPC+jg9usdfcaSZeQbfzbdaVBalcm2Wt+1qxh3LZSTS+LxKikm02Q==}
+  /@aws-sdk/middleware-ssec/3.537.0:
+    resolution: {integrity: sha512-2QWMrbwd5eBy5KCYn9a15JEWBgrK2qFEKQN2lqb/6z0bhtevIOxIRfC99tzvRuPt6nixFQ+ynKuBjcfT4ZFrdQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-sdk/types': 3.535.0
@@ -906,8 +906,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@aws-sdk/s3-request-presigner/3.536.0:
-    resolution: {integrity: sha512-bMz7nxYfSjCkw72Hah40o0c9scwU2LQWoT3CkTcWs9OCrG4MCzMTBJNlzRUpxOpfGTZqVzrCaUGINIjh3jP/tQ==}
+  /@aws-sdk/s3-request-presigner/3.537.0:
+    resolution: {integrity: sha512-jG3u9PTl9LpMFr+AY4jx4HvN3+qCFN5vy45U4E8zPagsQ4MbEseUcYpyyC9SHo+3DIgAJQLNV8Zv3LrtdiB5vQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-sdk/signature-v4-multi-region': 3.535.0
