@@ -51,7 +51,7 @@ importers:
       eslint: 8.57.0
       isbot: latest
       jsonwebtoken: 9.0.2
-      lucide-react: ^0.362.0
+      lucide-react: ^0.363.0
       nprogress: ^0.2.0
       postcss: ^8.4.21
       prettier: ^3.0.0
@@ -89,7 +89,7 @@ importers:
       dayjs: 1.11.10
       isbot: 5.1.2
       jsonwebtoken: 9.0.2
-      lucide-react: 0.362.0_react@18.2.0
+      lucide-react: 0.363.0_react@18.2.0
       nprogress: 0.2.0
       query-string: 8.2.0
       react: 18.2.0
@@ -299,7 +299,7 @@ importers:
       class-variance-authority: ^0.7.0
       dotenv-cli: ^7.1.0
       eslint: 8.57.0
-      lucide-react: ^0.362.0
+      lucide-react: ^0.363.0
       postcss: ^8.4.21
       prettier: ^3.0.0
       react: 18.2.0
@@ -321,7 +321,7 @@ importers:
       '@radix-ui/react-toast': 1.1.4_tlgax2ub5hs2nenkb6shudrpfq
       '@radix-ui/react-tooltip': 1.0.6_tlgax2ub5hs2nenkb6shudrpfq
       class-variance-authority: 0.7.0
-      lucide-react: 0.362.0_react@18.2.0
+      lucide-react: 0.363.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwind-merge: 1.14.0
@@ -8815,8 +8815,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /lucide-react/0.362.0_react@18.2.0:
-    resolution: {integrity: sha512-0S+JudK0AD9vyB0zbu1K0aQsy8k9Wq2l03bio6wxqF2FhK2TSp/y+22HfMyv40EURifgxoSwdU8eIcOv0a8gBA==}
+  /lucide-react/0.363.0_react@18.2.0:
+    resolution: {integrity: sha512-AlsfPCsXQyQx7wwsIgzcKOL9LwC498LIMAo+c0Es5PkHJa33xwmYAkkSoKoJWWWSYQEStqu58/jT4tL2gi32uQ==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
