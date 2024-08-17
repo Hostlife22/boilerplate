@@ -226,7 +226,7 @@ importers:
       '@react-email/container': 0.0.13
       '@react-email/font': ^0.0.7
       '@react-email/head': 0.0.10
-      '@react-email/heading': 0.0.11
+      '@react-email/heading': 0.0.13
       '@react-email/hr': 0.0.7
       '@react-email/html': 0.0.7
       '@react-email/img': 0.0.7
@@ -245,7 +245,7 @@ importers:
       '@react-email/container': 0.0.13
       '@react-email/font': 0.0.7
       '@react-email/head': 0.0.10
-      '@react-email/heading': 0.0.11
+      '@react-email/heading': 0.0.13
       '@react-email/hr': 0.0.7
       '@react-email/html': 0.0.7
       '@react-email/img': 0.0.7
@@ -3260,18 +3260,6 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@radix-ui/react-compose-refs/1.0.1:
-    resolution: {integrity: sha512-fDSBgd44FKHa1FRMU59qBMPFcl2PZE+2nmqunj+BWFyYYjnhIDWL2ItDs3rrbJDQOtzt5nIebLCQc4QRfz6LJw==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.22.15
-    dev: false
-
   /@radix-ui/react-compose-refs/1.0.1_pcklb7m674k6u3r3q7fjhnofge:
     resolution: {integrity: sha512-fDSBgd44FKHa1FRMU59qBMPFcl2PZE+2nmqunj+BWFyYYjnhIDWL2ItDs3rrbJDQOtzt5nIebLCQc4QRfz6LJw==}
     peerDependencies:
@@ -3284,6 +3272,16 @@ packages:
       '@babel/runtime': 7.22.15
       '@types/react': 18.3.3
       react: 18.2.0
+    dev: false
+
+  /@radix-ui/react-compose-refs/1.1.0:
+    resolution: {integrity: sha512-b4inOtiaOnYf9KWyO3jAeeCG6FeyfY6ldiEPanbUjWd+xIk5wZeHa8yVwmrJ2vderhu/BQvzCrJI0lHd+wIiqw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
     dev: false
 
   /@radix-ui/react-context/1.0.1_pcklb7m674k6u3r3q7fjhnofge:
@@ -3677,19 +3675,6 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@radix-ui/react-slot/1.0.2:
-    resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.22.15
-      '@radix-ui/react-compose-refs': 1.0.1
-    dev: false
-
   /@radix-ui/react-slot/1.0.2_pcklb7m674k6u3r3q7fjhnofge:
     resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
     peerDependencies:
@@ -3703,6 +3688,18 @@ packages:
       '@radix-ui/react-compose-refs': 1.0.1_pcklb7m674k6u3r3q7fjhnofge
       '@types/react': 18.3.3
       react: 18.2.0
+    dev: false
+
+  /@radix-ui/react-slot/1.1.0:
+    resolution: {integrity: sha512-FUCf5XMfmW4dtYl69pdS4DbxKy8nj4M7SafBgPllysxmdachynNflAdp/gCsnYWNDnge6tI9onzMp5ARYc1KNw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.0
     dev: false
 
   /@radix-ui/react-switch/1.0.3_u2bcxm47nly4g3daikrxc23hqq:
@@ -3959,13 +3956,13 @@ packages:
       react: ^18.2.0
     dev: false
 
-  /@react-email/heading/0.0.11:
-    resolution: {integrity: sha512-EF5ZtRCxhHPw3m+8iibKKg0RAvAeHj1AP68sjU7s6+J+kvRgllr/E972Wi5Y8UvcIGossCvpX1WrSMDzeB4puA==}
+  /@react-email/heading/0.0.13:
+    resolution: {integrity: sha512-MYDzjJwljKHBLueLuyqkaHxu6N4aGOL1ms2NNyJ9WXC9mmBnLs4Y/QEf9SjE4Df3AW4iT9uyfVHuaNUb7uq5QA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      react: 18.2.0
+      react: ^18.2.0
     dependencies:
-      '@radix-ui/react-slot': 1.0.2
+      '@radix-ui/react-slot': 1.1.0
     transitivePeerDependencies:
       - '@types/react'
     dev: false
