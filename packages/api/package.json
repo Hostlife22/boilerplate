@@ -16,7 +16,7 @@
     "@boilerplate/emails": "workspace:*",
     "@trpc/server": "^10.16.0",
     "bcryptjs": "^2.4.3",
-    "dayjs": "1.11.10",
+    "dayjs": "1.11.12",
     "jsonwebtoken": "9.0.2",
     "nodemailer": "6.9.13",
     "resend": "^1.0.0",

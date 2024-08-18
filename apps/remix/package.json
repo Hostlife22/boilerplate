@@ -36,7 +36,7 @@
     "@vercel/remix": "^1.15.0",
     "axios": "^1.3.4",
     "bcryptjs": "^2.4.3",
-    "dayjs": "1.11.10",
+    "dayjs": "1.11.12",
     "isbot": "latest",
     "jsonwebtoken": "9.0.2",
     "lucide-react": "^0.363.0",
