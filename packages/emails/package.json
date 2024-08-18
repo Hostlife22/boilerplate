@@ -24,7 +24,7 @@
     "@react-email/link": "0.0.9",
     "@react-email/render": "0.0.17",
     "@react-email/tailwind": "0.0.19",
-    "@react-email/text": "0.0.7"
+    "@react-email/text": "0.0.9"
   },
   "devDependencies": {
     "@boilerplate/eslint-config": "workspace:*",
