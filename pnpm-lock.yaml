@@ -267,11 +267,11 @@ importers:
       '@types/node': ^18.15.3
       eslint: 8.57.0
       prettier: ^3.0.0
-      tailwind-merge: ^1.10.0
+      tailwind-merge: ^2.0.0
       typescript: 5.5.4
     dependencies:
       '@boilerplate/database': link:../database
-      tailwind-merge: 1.14.0
+      tailwind-merge: 2.5.2
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/node': 18.19.44
@@ -304,7 +304,7 @@ importers:
       prettier: ^3.0.0
       react: 18.3.1
       react-dom: 18.3.1
-      tailwind-merge: ^1.10.0
+      tailwind-merge: ^2.0.0
       tailwindcss: ^3.3.1
       tailwindcss-radix: ^2.8.0
       typescript: 5.5.4
@@ -324,7 +324,7 @@ importers:
       lucide-react: 0.428.0_react@18.3.1
       react: 18.3.1
       react-dom: 18.3.1_react@18.3.1
-      tailwind-merge: 1.14.0
+      tailwind-merge: 2.5.2
       tailwindcss-radix: 2.9.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
@@ -11482,8 +11482,8 @@ packages:
       picocolors: 1.0.1
     dev: true
 
-  /tailwind-merge/1.14.0:
-    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+  /tailwind-merge/2.5.2:
+    resolution: {integrity: sha512-kjEBm+pvD+6eAwzJL2Bi+02/9LFLal1Gs61+QB7HvTfQQ0aXwC5LGT8PEt1gS0CWKktKe6ysPTAy3cBC5MeiIg==}
     dev: false
 
   /tailwindcss-animate/1.0.7_tailwindcss@3.4.10:
