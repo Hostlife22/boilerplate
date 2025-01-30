@@ -110,7 +110,7 @@ importers:
       '@types/react-dom': 18.3.5_@types+react@18.3.18
       '@types/sharp': 0.32.0
       cssnano: 6.0.1_postcss@8.4.41
-      dotenv-cli: 7.4.2
+      dotenv-cli: 7.4.4
       eslint: 8.57.0
       postcss: 8.4.41
       prettier: 3.3.3
@@ -156,7 +156,7 @@ importers:
       '@types/jsonwebtoken': 9.0.8
       '@types/node': 18.19.74
       '@types/nodemailer': 6.4.17
-      dotenv-cli: 7.4.2
+      dotenv-cli: 7.4.4
       eslint: 8.57.0
       prettier: 3.3.3
       typescript: 5.5.4
@@ -213,7 +213,7 @@ importers:
     devDependencies:
       '@faker-js/faker': 8.4.1
       '@types/node': 18.19.74
-      dotenv-cli: 7.4.2
+      dotenv-cli: 7.4.4
       ts-node: 10.9.1_54tjrj2xdzqpsaq5x36te5p7za
       typescript: 5.5.4
 
@@ -331,7 +331,7 @@ importers:
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.10
       '@types/react': 18.3.18
       '@types/react-dom': 18.3.5_@types+react@18.3.18
-      dotenv-cli: 7.4.2
+      dotenv-cli: 7.4.4
       eslint: 8.57.0
       postcss: 8.4.41
       prettier: 3.3.3
@@ -6355,6 +6355,15 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /cross-spawn/7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
+    engines: {node: '>= 8'}
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
 
   /css-declaration-sorter/6.4.1_postcss@8.4.41:
     resolution: {integrity: sha512-rtdthzxKuyq6IzqX6jEcIzQF/YqccluefyCYheovBOLhFT/drQA9zj/UbRAa9J7C0o6EG6u3E6g+vKkay7/k3g==}
@@ -6720,12 +6729,12 @@ packages:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  /dotenv-cli/7.4.2:
-    resolution: {integrity: sha512-SbUj8l61zIbzyhIbg0FwPJq6+wjbzdn9oEtozQpZ6kW2ihCcapKVZj49oCT3oPM+mgQm+itgvUQcG5szxVrZTA==}
+  /dotenv-cli/7.4.4:
+    resolution: {integrity: sha512-XkBYCG0tPIes+YZr4SpfFv76SQrV/LeCE8CI7JSEMi3VR9MvTihCGTOtbIexD6i2mXF+6px7trb1imVCXSNMDw==}
     hasBin: true
     dependencies:
-      cross-spawn: 7.0.3
-      dotenv: 16.4.5
+      cross-spawn: 7.0.6
+      dotenv: 16.4.7
       dotenv-expand: 10.0.0
       minimist: 1.2.8
     dev: true
@@ -6740,8 +6749,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /dotenv/16.4.5:
-    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+  /dotenv/16.4.7:
+    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
     dev: true
 
@@ -7578,7 +7587,7 @@ packages:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.1
@@ -7798,7 +7807,7 @@ packages:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
   /form-data/4.0.0:
