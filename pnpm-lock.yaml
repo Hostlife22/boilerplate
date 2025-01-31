@@ -233,7 +233,7 @@ importers:
       '@react-email/link': 0.0.12
       '@react-email/render': 0.0.17
       '@react-email/tailwind': 0.0.19
-      '@react-email/text': 0.0.9
+      '@react-email/text': 0.0.11
       eslint: 8.57.0
       prettier: ^3.0.0
       tailwindcss: ^3.3.1
@@ -252,7 +252,7 @@ importers:
       '@react-email/link': 0.0.12
       '@react-email/render': 0.0.17
       '@react-email/tailwind': 0.0.19
-      '@react-email/text': 0.0.9
+      '@react-email/text': 0.0.11
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
       eslint: 8.57.0
@@ -3976,11 +3976,11 @@ packages:
       react: ^18.2.0
     dev: false
 
-  /@react-email/text/0.0.9:
-    resolution: {integrity: sha512-UNFPGerER3zywpb1ODOS2VgHP7rgOmiTxMHn75pjvQf/gi3/jN9edEQLYvRgPv/mNn4IpJFkOrlP8jcammLeew==}
+  /@react-email/text/0.0.11:
+    resolution: {integrity: sha512-a7nl/2KLpRHOYx75YbYZpWspUbX1DFY7JIZbOv5x0QU8SvwDbJt+Hm01vG34PffFyYvHEXrc6Qnip2RTjljNjg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
     dev: false
 
   /@remix-run/dev/1.19.3_@remix-run+serve@1.19.3:
