@@ -84,7 +84,7 @@ importers:
       '@trpc/react-query': 10.38.3_kxzjry6ikjbehpfsbjwwlvygu4
       '@trpc/server': 10.45.2
       '@vercel/remix': 1.19.3_nnrd3gsncyragczmpvfhocinkq
-      axios: 1.7.4
+      axios: 1.7.9
       bcryptjs: 2.4.3
       dayjs: 1.11.12
       isbot: 5.1.22
@@ -5784,11 +5784,11 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios/1.7.4:
-    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
+  /axios/1.7.9:
+    resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
     dependencies:
-      follow-redirects: 1.15.6
-      form-data: 4.0.0
+      follow-redirects: 1.15.9
+      form-data: 4.0.1
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -7773,8 +7773,8 @@ packages:
     resolution: {integrity: sha512-6qu0W+A94UKNJRs3ffE8s/fWSHQbjqdNx8elGAe95IqnJA77P68TFz4+2cwC28ouAibiZdGBeV6DsvvMg+4vhQ==}
     dev: true
 
-  /follow-redirects/1.15.6:
-    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
+  /follow-redirects/1.15.9:
+    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -7795,8 +7795,8 @@ packages:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
-  /form-data/4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+  /form-data/4.0.1:
+    resolution: {integrity: sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==}
     engines: {node: '>= 6'}
     dependencies:
       asynckit: 0.4.0
