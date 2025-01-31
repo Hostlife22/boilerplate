@@ -14,7 +14,7 @@
     "@boilerplate/tailwind-config": "workspace:*",
     "@react-email/button": "0.0.19",
     "@react-email/column": "0.0.13",
-    "@react-email/container": "0.0.13",
+    "@react-email/container": "0.0.15",
     "@react-email/font": "^0.0.7",
     "@react-email/head": "0.0.10",
     "@react-email/heading": "0.0.13",
