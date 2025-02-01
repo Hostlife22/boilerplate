@@ -59,7 +59,7 @@ importers:
       react: 18.3.1
       react-dom: 18.3.1
       react-dropzone: 14.2.3
-      remix-flat-routes: 0.6.5
+      remix-flat-routes: 0.8.4
       sharp: ^0.33.0
       superjson: ^1.12.2
       tailwindcss: ^3.3.1
@@ -114,7 +114,7 @@ importers:
       eslint: 8.57.0
       postcss: 8.5.1
       prettier: 3.4.2
-      remix-flat-routes: 0.6.5_@remix-run+dev@1.19.3
+      remix-flat-routes: 0.8.4
       tailwindcss: 3.4.17
       typescript: 5.5.4
 
@@ -4165,15 +4165,6 @@ packages:
       set-cookie-parser: 2.6.0
       source-map: 0.7.4
 
-  /@remix-run/v1-route-convention/0.1.3_@remix-run+dev@1.19.3:
-    resolution: {integrity: sha512-RQhZ0IYRIfmPiXYHx2oYQH18Ho92z84wGZT1ykKpXPtFXIBov5X+/WeWSbBQghi3lcPoXdepff/tA9ImtvtT3g==}
-    peerDependencies:
-      '@remix-run/dev': ^1.15.0 || ^2.0.0
-    dependencies:
-      '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
-      minimatch: 7.4.6
-    dev: true
-
   /@remix-run/web-blob/3.1.0:
     resolution: {integrity: sha512-owGzFLbqPH9PlKb8KvpNJ0NO74HWE2euAn61eEiyCXX/oteoVzTVSN8mpLgDjaxBf2btj5/nUllSUgpyd6IH6g==}
     dependencies:
@@ -7830,8 +7821,8 @@ packages:
       universalify: 2.0.0
     dev: true
 
-  /fs-extra/11.1.1:
-    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+  /fs-extra/11.3.0:
+    resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
     engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.11
@@ -9457,24 +9448,17 @@ packages:
     hasBin: true
     dev: true
 
+  /minimatch/10.0.1:
+    resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
+    engines: {node: 20 || >=22}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
-    dev: true
-
-  /minimatch/5.1.6:
-    resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
-    engines: {node: '>=10'}
-    dependencies:
-      brace-expansion: 2.0.1
-    dev: true
-
-  /minimatch/7.4.6:
-    resolution: {integrity: sha512-sBz8G/YjVniEz6lKPNpKxXwazJe4c19fEfV2GDMX6AjFz+MX9uDWIZW8XreVhkFW3fkIdTv/gxWr/Kks5FFAVw==}
-    engines: {node: '>=10'}
-    dependencies:
-      brace-expansion: 2.0.1
     dev: true
 
   /minimatch/9.0.1:
@@ -10903,16 +10887,18 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remix-flat-routes/0.6.5_@remix-run+dev@1.19.3:
-    resolution: {integrity: sha512-VvPak+LCxL4Fm6Kb/nqPLipB71k9p+GXpzRNPVxs9FmCeJ7hxVmQ3HQMpStzuRQyAh0PMkaX6mBiRlCRHTCYHw==}
+  /remix-flat-routes/0.8.4:
+    resolution: {integrity: sha512-W+kwaICoFwzKS14j3bixoOGlQ2WZ3PNo18QGADpBGxjcXDfZAZ6OnHJT8SU2Q+/r83YPGvu4yijjIRlBcfokxA==}
+    engines: {node: '>=16.6.0'}
     hasBin: true
     peerDependencies:
-      '@remix-run/dev': ^1.15.0 || ^2
+      react-router: ^7
+    peerDependenciesMeta:
+      react-router:
+        optional: true
     dependencies:
-      '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
-      '@remix-run/v1-route-convention': 0.1.3_@remix-run+dev@1.19.3
-      fs-extra: 11.1.1
-      minimatch: 5.1.6
+      fs-extra: 11.3.0
+      minimatch: 10.0.1
     dev: true
 
   /remove-accents/0.4.2:
