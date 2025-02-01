@@ -74,7 +74,7 @@ importers:
       '@boilerplate/shared': link:../../packages/shared
       '@boilerplate/tailwind-config': link:../../packages/config/tailwind
       '@boilerplate/ui': link:../../packages/ui
-      '@fontsource/poppins': 5.0.15
+      '@fontsource/poppins': 5.1.1
       '@remix-run/node': 1.19.3
       '@remix-run/react': 1.19.3_nnrd3gsncyragczmpvfhocinkq
       '@remix-run/serve': 1.19.3
@@ -2726,8 +2726,8 @@ packages:
     resolution: {integrity: sha512-uvnFKtPgzLnpzzTRfhDlvXX0kLYi9lDRQbcDmT8iXl71Rx+uwSuaUIQl3DNC7w5OweAQ7XQMDObML+KaYDQfng==}
     dev: false
 
-  /@fontsource/poppins/5.0.15:
-    resolution: {integrity: sha512-hN8jhlb01v0f8F3X5h8XUiqz/dMYg/RrhyHmU1o4gZIgk+Yj2SeqmRLBj88Lh+pEjdVTmbDXSHGCVlbyPaSm8A==}
+  /@fontsource/poppins/5.1.1:
+    resolution: {integrity: sha512-PQVKHGQOK+UpVNPzTFF9Z9ez3CIDkunfvRXGH95hiDoqWJc1shW4JFqe4tEoqnq7RtZaYrw9aWQq58L4eny5xg==}
     dev: false
 
   /@gar/promisify/1.1.3:
