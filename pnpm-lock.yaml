@@ -10,7 +10,7 @@ importers:
     dependencies:
       turbo: 1.13.4
     devDependencies:
-      prettier: 3.4.2
+      prettier: 3.6.2
       typescript: 5.7.3
 
   apps/remix:
@@ -113,7 +113,7 @@ importers:
       dotenv-cli: 7.4.4
       eslint: 8.57.1
       postcss: 8.5.6
-      prettier: 3.4.2
+      prettier: 3.6.2
       remix-flat-routes: 0.8.5
       tailwindcss: 3.4.17
       typescript: 5.7.3
@@ -158,7 +158,7 @@ importers:
       '@types/nodemailer': 6.4.17
       dotenv-cli: 7.4.4
       eslint: 8.57.1
-      prettier: 3.4.2
+      prettier: 3.6.2
       typescript: 5.7.3
 
   packages/config/eslint:
@@ -194,7 +194,7 @@ importers:
       '@boilerplate/eslint-config': link:../eslint
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.17
       eslint: 8.57.1
-      prettier: 3.4.2
+      prettier: 3.6.2
       tailwindcss: 3.4.17
       typescript: 5.7.3
 
@@ -256,7 +256,7 @@ importers:
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
       eslint: 8.57.1
-      prettier: 3.4.2
+      prettier: 3.6.2
       tailwindcss: 3.4.17
       typescript: 5.7.3
 
@@ -276,7 +276,7 @@ importers:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/node': 18.19.120
       eslint: 8.57.1
-      prettier: 3.4.2
+      prettier: 3.6.2
       typescript: 5.7.3
 
   packages/ui:
@@ -334,7 +334,7 @@ importers:
       dotenv-cli: 7.4.4
       eslint: 8.57.1
       postcss: 8.5.6
-      prettier: 3.4.2
+      prettier: 3.6.2
       tailwindcss: 3.4.17
       typescript: 5.7.3
 
@@ -10867,8 +10867,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier/3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  /prettier/3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
