@@ -58,7 +58,7 @@ importers:
       query-string: ^8.1.0
       react: 18.3.1
       react-dom: 18.3.1
-      react-dropzone: 14.3.5
+      react-dropzone: 14.3.8
       remix-flat-routes: 0.8.5
       sharp: ^0.33.0
       superjson: ^1.12.2
@@ -94,7 +94,7 @@ importers:
       query-string: 8.2.0
       react: 18.3.1
       react-dom: 18.3.1_react@18.3.1
-      react-dropzone: 14.3.5_react@18.3.1
+      react-dropzone: 14.3.8_react@18.3.1
       sharp: 0.33.5
       superjson: 1.13.3
       zod: 3.24.1
@@ -4203,7 +4203,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/abort-controller/4.0.1:
@@ -4317,7 +4317,7 @@ packages:
       '@smithy/querystring-builder': 2.2.0
       '@smithy/types': 2.12.0
       '@smithy/util-base64': 2.3.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/fetch-http-handler/5.0.1:
@@ -4445,7 +4445,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/middleware-serde/4.0.2:
@@ -4490,7 +4490,7 @@ packages:
       '@smithy/protocol-http': 3.3.0
       '@smithy/querystring-builder': 2.2.0
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/node-http-handler/4.0.2:
@@ -4517,7 +4517,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/protocol-http/5.0.1:
@@ -4534,7 +4534,7 @@ packages:
     dependencies:
       '@smithy/types': 2.12.0
       '@smithy/util-uri-escape': 2.2.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/querystring-builder/4.0.1:
@@ -4551,7 +4551,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/querystring-parser/4.0.1:
@@ -4633,7 +4633,7 @@ packages:
     dependencies:
       '@smithy/querystring-parser': 2.2.0
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/url-parser/4.0.1:
@@ -4651,7 +4651,7 @@ packages:
     dependencies:
       '@smithy/util-buffer-from': 2.2.0
       '@smithy/util-utf8': 2.3.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/util-base64/4.0.0:
@@ -4737,7 +4737,7 @@ packages:
     resolution: {integrity: sha512-7iKXR+/4TpLK194pVjKiasIyqMtTYJsgKgM242Y9uzt5dhHnUDvMNb+3xIhRJ9QhvqGii/5cRUt4fJn3dtXNHQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/util-hex-encoding/4.0.0:
@@ -4752,7 +4752,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@smithy/types': 2.12.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/util-middleware/4.0.1:
@@ -4804,7 +4804,7 @@ packages:
     resolution: {integrity: sha512-jtmJMyt1xMD/d8OtbVJ2gFZOSKc+ueYJZPW20ULW1GOp/q/YIM0wNh+u8ZFao9UaIGz4WoPW8hC64qlWLIfoDA==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
 
   /@smithy/util-uri-escape/4.0.0:
@@ -11046,8 +11046,8 @@ packages:
       scheduler: 0.23.2
     dev: false
 
-  /react-dropzone/14.3.5_react@18.3.1:
-    resolution: {integrity: sha512-9nDUaEEpqZLOz5v5SUcFA0CjM4vq8YbqO0WRls+EYT7+DvxUdzDPKNCPLqGfj3YL9MsniCLCD4RFA6M95V6KMQ==}
+  /react-dropzone/14.3.8_react@18.3.1:
+    resolution: {integrity: sha512-sBgODnq+lcA4P296DY4wacOZz3JFpD99fp+hb//iBO2HHnyeZU3FwWyXJ6salNpqQdsZrgMrotuko/BdJMV8Ug==}
     engines: {node: '>= 10.13'}
     peerDependencies:
       react: '>= 16.8 || 18.0.0'
