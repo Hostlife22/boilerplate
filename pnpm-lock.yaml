@@ -133,7 +133,7 @@ importers:
       dotenv-cli: ^7.1.0
       eslint: 8.57.1
       jsonwebtoken: 9.0.2
-      nodemailer: 6.10.0
+      nodemailer: 6.10.1
       prettier: ^3.0.0
       resend: ^1.0.0
       superjson: ^1.12.2
@@ -146,7 +146,7 @@ importers:
       bcryptjs: 2.4.3
       dayjs: 1.11.13
       jsonwebtoken: 9.0.2
-      nodemailer: 6.10.0
+      nodemailer: 6.10.1
       resend: 1.1.0
       superjson: 1.13.3
       zod: 3.24.1
@@ -10002,8 +10002,8 @@ packages:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
     dev: true
 
-  /nodemailer/6.10.0:
-    resolution: {integrity: sha512-SQ3wZCExjeSatLE/HBaXS5vqUOQk6GtBdIIKxiFdmm01mOQZX/POJkO3SUX1wDiYcwUOJwT23scFSC9fY2H8IA==}
+  /nodemailer/6.10.1:
+    resolution: {integrity: sha512-Z+iLaBGVaSjbIzQ4pX6XV41HrooLsQ10ZWPUehGmuantvzWoDVBnmsdUcOIDM1t+yPor5pDhVlDESgOMEGxhHA==}
     engines: {node: '>=6.0.0'}
     dev: false
 
