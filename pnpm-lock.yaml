@@ -59,7 +59,7 @@ importers:
       react: 18.3.1
       react-dom: 18.3.1
       react-dropzone: 14.3.5
-      remix-flat-routes: 0.8.4
+      remix-flat-routes: 0.8.5
       sharp: ^0.33.0
       superjson: ^1.12.2
       tailwindcss: ^3.3.1
@@ -114,7 +114,7 @@ importers:
       eslint: 8.57.1
       postcss: 8.5.6
       prettier: 3.4.2
-      remix-flat-routes: 0.8.4
+      remix-flat-routes: 0.8.5
       tailwindcss: 3.4.17
       typescript: 5.7.3
 
@@ -11334,15 +11334,10 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remix-flat-routes/0.8.4:
-    resolution: {integrity: sha512-W+kwaICoFwzKS14j3bixoOGlQ2WZ3PNo18QGADpBGxjcXDfZAZ6OnHJT8SU2Q+/r83YPGvu4yijjIRlBcfokxA==}
+  /remix-flat-routes/0.8.5:
+    resolution: {integrity: sha512-30GcEpvwqFXCyTKiCTeqI3QSNyTg+f0qLGeIc95y6o3gaOEIhbC37qWpe8HrVEkdnj48xUyaUK03jm1zYFkhfA==}
     engines: {node: '>=16.6.0'}
     hasBin: true
-    peerDependencies:
-      react-router: ^7
-    peerDependenciesMeta:
-      react-router:
-        optional: true
     dependencies:
       fs-extra: 11.3.0
       minimatch: 10.0.1
