@@ -221,7 +221,7 @@ importers:
     specifiers:
       '@boilerplate/eslint-config': workspace:*
       '@boilerplate/tailwind-config': workspace:*
-      '@react-email/button': 0.0.19
+      '@react-email/button': 0.2.0
       '@react-email/column': 0.0.13
       '@react-email/container': 0.0.15
       '@react-email/font': ^0.0.9
@@ -240,7 +240,7 @@ importers:
       typescript: 5.8.3
     dependencies:
       '@boilerplate/tailwind-config': link:../config/tailwind
-      '@react-email/button': 0.0.19
+      '@react-email/button': 0.2.0
       '@react-email/column': 0.0.13
       '@react-email/container': 0.0.15
       '@react-email/font': 0.0.9
@@ -3843,8 +3843,8 @@ packages:
       '@babel/runtime': 7.22.15
     dev: false
 
-  /@react-email/button/0.0.19:
-    resolution: {integrity: sha512-HYHrhyVGt7rdM/ls6FuuD6XE7fa7bjZTJqB2byn6/oGsfiEZaogY77OtoLL/mrQHjHjZiJadtAMSik9XLcm7+A==}
+  /@react-email/button/0.2.0:
+    resolution: {integrity: sha512-8i+v6cMxr2emz4ihCrRiYJPp2/sdYsNNsBzXStlcA+/B9Umpm5Jj3WJKYpgTPM+aeyiqlG/MMI1AucnBm4f1oQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
