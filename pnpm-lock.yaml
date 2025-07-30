@@ -87,7 +87,7 @@ importers:
       axios: 1.11.0
       bcryptjs: 2.4.3
       dayjs: 1.11.13
-      isbot: 5.1.28
+      isbot: 5.1.29
       jsonwebtoken: 9.0.2
       lucide-react: 0.525.0_react@18.3.1
       nprogress: 0.2.0
@@ -154,7 +154,7 @@ importers:
       '@boilerplate/eslint-config': link:../config/eslint
       '@types/bcryptjs': 2.4.6
       '@types/jsonwebtoken': 9.0.10
-      '@types/node': 18.19.120
+      '@types/node': 18.19.121
       '@types/nodemailer': 6.4.17
       dotenv-cli: 7.4.4
       eslint: 8.57.1
@@ -212,9 +212,9 @@ importers:
       prisma: 5.22.0
     devDependencies:
       '@faker-js/faker': 8.4.1
-      '@types/node': 18.19.120
+      '@types/node': 18.19.121
       dotenv-cli: 7.4.4
-      ts-node: 10.9.1_cweyxlvydpj27u2rgbsjf3lvqm
+      ts-node: 10.9.1_4f3iuktj37e5mjtiodgc4txm74
       typescript: 5.8.3
 
   packages/emails:
@@ -274,7 +274,7 @@ importers:
       tailwind-merge: 1.14.0
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
-      '@types/node': 18.19.120
+      '@types/node': 18.19.121
       eslint: 8.57.1
       prettier: 3.6.2
       typescript: 5.8.3
@@ -5105,8 +5105,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
-  /@types/node/18.19.120:
-    resolution: {integrity: sha512-WtCGHFXnVI8WHLxDAt5TbnCM4eSE+nI0QN2NJtwzcgMhht2eNz6V9evJrk+lwC8bCY8OWV5Ym8Jz7ZEyGnKnMA==}
+  /@types/node/18.19.121:
+    resolution: {integrity: sha512-bHOrbyztmyYIi4f1R0s17QsPs1uyyYnGcXeZoGEd227oZjry0q6XQBQxd82X1I57zEfwO8h9Xo+Kl5gX1d9MwQ==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -5126,7 +5126,7 @@ packages:
   /@types/nodemailer/6.4.17:
     resolution: {integrity: sha512-I9CCaIp6DTldEg7vyUTZi8+9Vo0hi1/T8gv3C89yk1rSAAzoKQ8H8ki/jBYJSFoH/BisgLP8tkZMlQ91CIquww==}
     dependencies:
-      '@types/node': 18.19.120
+      '@types/node': 18.19.121
     dev: true
 
   /@types/nprogress/0.2.3:
@@ -8844,8 +8844,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/5.1.28:
-    resolution: {integrity: sha512-qrOp4g3xj8YNse4biorv6O5ZShwsJM0trsoda4y7j/Su7ZtTTfVXFzbKkpgcSoDrHS8FcTuUwcU04YimZlZOxw==}
+  /isbot/5.1.29:
+    resolution: {integrity: sha512-DelDWWoa3mBoyWTq3wjp+GIWx/yZdN7zLUE7NFhKjAiJ+uJVRkbLlwykdduCE4sPUUy8mlTYTmdhBUYu91F+sw==}
     engines: {node: '>=18'}
     dev: false
 
@@ -11959,7 +11959,7 @@ packages:
   /ts-interface-checker/0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  /ts-node/10.9.1_cweyxlvydpj27u2rgbsjf3lvqm:
+  /ts-node/10.9.1_4f3iuktj37e5mjtiodgc4txm74:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -11978,7 +11978,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.19.120
+      '@types/node': 18.19.121
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
