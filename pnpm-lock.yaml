@@ -55,7 +55,7 @@ importers:
       nprogress: ^0.2.0
       postcss: ^8.4.21
       prettier: ^3.0.0
-      query-string: ^8.1.0
+      query-string: ^9.0.0
       react: 18.3.1
       react-dom: 18.3.1
       react-dropzone: 14.3.8
@@ -87,11 +87,11 @@ importers:
       axios: 1.11.0
       bcryptjs: 2.4.3
       dayjs: 1.11.13
-      isbot: 5.1.30
+      isbot: 5.1.31
       jsonwebtoken: 9.0.2
       lucide-react: 0.541.0_react@18.3.1
       nprogress: 0.2.0
-      query-string: 8.2.0
+      query-string: 9.3.1
       react: 18.3.1
       react-dom: 18.3.1_react@18.3.1
       react-dropzone: 14.3.8_react@18.3.1
@@ -8782,8 +8782,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/5.1.30:
-    resolution: {integrity: sha512-3wVJEonAns1OETX83uWsk5IAne2S5zfDcntD2hbtU23LelSqNXzXs9zKjMPOLMzroCgIjCfjYAEHrd2D6FOkiA==}
+  /isbot/5.1.31:
+    resolution: {integrity: sha512-DPgQshehErHAqSCKDb3rNW03pa2wS/v5evvUqtxt6TTnHRqAG8FdzcSSJs9656pK6Y+NT7K9R4acEYXLHYfpUQ==}
     engines: {node: '>=18'}
     dev: false
 
@@ -10763,9 +10763,9 @@ packages:
     dependencies:
       side-channel: 1.1.0
 
-  /query-string/8.2.0:
-    resolution: {integrity: sha512-tUZIw8J0CawM5wyGBiDOAp7ObdRQh4uBor/fUR9ZjmbZVvw95OD9If4w3MQxr99rg0DJZ/9CIORcpEqU5hQG7g==}
-    engines: {node: '>=14.16'}
+  /query-string/9.3.1:
+    resolution: {integrity: sha512-5fBfMOcDi5SA9qj5jZhWAcTtDfKF5WFdd2uD9nVNlbxVv1baq65aALy6qofpNEGELHvisjjasxQp7BlM9gvMzw==}
+    engines: {node: '>=18'}
     dependencies:
       decode-uri-component: 0.4.1
       filter-obj: 5.1.0
