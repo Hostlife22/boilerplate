@@ -87,7 +87,7 @@ importers:
       axios: 1.11.0
       bcryptjs: 2.4.3
       dayjs: 1.11.13
-      isbot: 5.1.30
+      isbot: 5.1.31
       jsonwebtoken: 9.0.2
       lucide-react: 0.541.0_react@18.3.1
       nprogress: 0.2.0
@@ -200,7 +200,7 @@ importers:
 
   packages/database:
     specifiers:
-      '@faker-js/faker': ^8.0.2
+      '@faker-js/faker': ^10.0.0
       '@prisma/client': 5.22.0
       '@types/node': ^18.15.3
       dotenv-cli: ^7.1.0
@@ -211,7 +211,7 @@ importers:
       '@prisma/client': 5.22.0_prisma@5.22.0
       prisma: 5.22.0
     devDependencies:
-      '@faker-js/faker': 8.4.1
+      '@faker-js/faker': 10.1.0
       '@types/node': 18.19.123
       dotenv-cli: 7.4.4
       ts-node: 10.9.1_o6x7p5sshqdg4cp5o5enxnnvwa
@@ -2723,9 +2723,9 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@faker-js/faker/8.4.1:
-    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
+  /@faker-js/faker/10.1.0:
+    resolution: {integrity: sha512-C3mrr3b5dRVlKPJdfrAXS8+dq+rq8Qm5SNRazca0JKgw1HQERFmrVb0towvMmw5uu8hHKNiQasMaR/tydf3Zsg==}
+    engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
     dev: true
 
   /@floating-ui/core/1.5.0:
@@ -8782,8 +8782,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/5.1.30:
-    resolution: {integrity: sha512-3wVJEonAns1OETX83uWsk5IAne2S5zfDcntD2hbtU23LelSqNXzXs9zKjMPOLMzroCgIjCfjYAEHrd2D6FOkiA==}
+  /isbot/5.1.31:
+    resolution: {integrity: sha512-DPgQshehErHAqSCKDb3rNW03pa2wS/v5evvUqtxt6TTnHRqAG8FdzcSSJs9656pK6Y+NT7K9R4acEYXLHYfpUQ==}
     engines: {node: '>=18'}
     dev: false
 
