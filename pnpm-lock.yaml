@@ -47,7 +47,7 @@ importers:
       bcryptjs: ^2.4.3
       cssnano: ^6.0.0
       dayjs: 1.11.13
-      dotenv-cli: ^7.1.0
+      dotenv-cli: ^10.0.0
       eslint: 8.57.1
       isbot: latest
       jsonwebtoken: 9.0.2
@@ -87,7 +87,7 @@ importers:
       axios: 1.11.0
       bcryptjs: 2.4.3
       dayjs: 1.11.13
-      isbot: 5.1.30
+      isbot: 5.1.31
       jsonwebtoken: 9.0.2
       lucide-react: 0.541.0_react@18.3.1
       nprogress: 0.2.0
@@ -110,7 +110,7 @@ importers:
       '@types/react-dom': 18.3.7_@types+react@18.3.24
       '@types/sharp': 0.32.0
       cssnano: 6.0.1_postcss@8.5.6
-      dotenv-cli: 7.4.4
+      dotenv-cli: 10.0.0
       eslint: 8.57.1
       postcss: 8.5.6
       prettier: 3.6.2
@@ -130,7 +130,7 @@ importers:
       '@types/nodemailer': 6.4.19
       bcryptjs: ^2.4.3
       dayjs: 1.11.13
-      dotenv-cli: ^7.1.0
+      dotenv-cli: ^10.0.0
       eslint: 8.57.1
       jsonwebtoken: 9.0.2
       nodemailer: 6.10.1
@@ -156,7 +156,7 @@ importers:
       '@types/jsonwebtoken': 9.0.10
       '@types/node': 18.19.123
       '@types/nodemailer': 6.4.19
-      dotenv-cli: 7.4.4
+      dotenv-cli: 10.0.0
       eslint: 8.57.1
       prettier: 3.6.2
       typescript: 5.9.2
@@ -203,7 +203,7 @@ importers:
       '@faker-js/faker': ^8.0.2
       '@prisma/client': 5.22.0
       '@types/node': ^18.15.3
-      dotenv-cli: ^7.1.0
+      dotenv-cli: ^10.0.0
       prisma: 5.22.0
       ts-node: ^10.9.1
       typescript: 5.9.2
@@ -213,7 +213,7 @@ importers:
     devDependencies:
       '@faker-js/faker': 8.4.1
       '@types/node': 18.19.123
-      dotenv-cli: 7.4.4
+      dotenv-cli: 10.0.0
       ts-node: 10.9.1_o6x7p5sshqdg4cp5o5enxnnvwa
       typescript: 5.9.2
 
@@ -297,7 +297,7 @@ importers:
       '@types/react': 18.3.24
       '@types/react-dom': 18.3.7
       class-variance-authority: ^0.7.0
-      dotenv-cli: ^7.1.0
+      dotenv-cli: ^10.0.0
       eslint: 8.57.1
       lucide-react: ^0.541.0
       postcss: ^8.4.21
@@ -331,7 +331,7 @@ importers:
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.17
       '@types/react': 18.3.24
       '@types/react-dom': 18.3.7_@types+react@18.3.24
-      dotenv-cli: 7.4.4
+      dotenv-cli: 10.0.0
       eslint: 8.57.1
       postcss: 8.5.6
       prettier: 3.6.2
@@ -6736,19 +6736,21 @@ packages:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  /dotenv-cli/7.4.4:
-    resolution: {integrity: sha512-XkBYCG0tPIes+YZr4SpfFv76SQrV/LeCE8CI7JSEMi3VR9MvTihCGTOtbIexD6i2mXF+6px7trb1imVCXSNMDw==}
+  /dotenv-cli/10.0.0:
+    resolution: {integrity: sha512-lnOnttzfrzkRx2echxJHQRB6vOAMSCzzZg79IxpC00tU42wZPuZkQxNNrrwVAxaQZIIh001l4PxVlCrBxngBzA==}
     hasBin: true
     dependencies:
       cross-spawn: 7.0.6
-      dotenv: 16.4.7
-      dotenv-expand: 10.0.0
+      dotenv: 17.2.3
+      dotenv-expand: 11.0.7
       minimist: 1.2.8
     dev: true
 
-  /dotenv-expand/10.0.0:
-    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
+  /dotenv-expand/11.0.7:
+    resolution: {integrity: sha512-zIHwmZPRshsCdpMDyVsqGmgyP0yT8GAgXUnkdAoJisxvf33k7yO6OuoKmcTGuXPWSsm8Oh88nZicRLA9Y0rUeA==}
     engines: {node: '>=12'}
+    dependencies:
+      dotenv: 16.4.7
     dev: true
 
   /dotenv/16.3.1:
@@ -6758,6 +6760,11 @@ packages:
 
   /dotenv/16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+    engines: {node: '>=12'}
+    dev: true
+
+  /dotenv/17.2.3:
+    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
     engines: {node: '>=12'}
     dev: true
 
@@ -8782,8 +8789,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/5.1.30:
-    resolution: {integrity: sha512-3wVJEonAns1OETX83uWsk5IAne2S5zfDcntD2hbtU23LelSqNXzXs9zKjMPOLMzroCgIjCfjYAEHrd2D6FOkiA==}
+  /isbot/5.1.31:
+    resolution: {integrity: sha512-DPgQshehErHAqSCKDb3rNW03pa2wS/v5evvUqtxt6TTnHRqAG8FdzcSSJs9656pK6Y+NT7K9R4acEYXLHYfpUQ==}
     engines: {node: '>=18'}
     dev: false
 
