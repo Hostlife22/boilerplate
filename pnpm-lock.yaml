@@ -61,7 +61,7 @@ importers:
       react-dropzone: 14.3.8
       remix-flat-routes: 0.8.5
       sharp: ^0.34.0
-      superjson: ^1.12.2
+      superjson: ^2.0.0
       tailwindcss: ^3.3.1
       typescript: 5.9.2
       zod: 3.25.76
@@ -87,7 +87,7 @@ importers:
       axios: 1.11.0
       bcryptjs: 2.4.3
       dayjs: 1.11.13
-      isbot: 5.1.30
+      isbot: 5.1.31
       jsonwebtoken: 9.0.2
       lucide-react: 0.541.0_react@18.3.1
       nprogress: 0.2.0
@@ -96,7 +96,7 @@ importers:
       react-dom: 18.3.1_react@18.3.1
       react-dropzone: 14.3.8_react@18.3.1
       sharp: 0.34.3
-      superjson: 1.13.3
+      superjson: 2.2.5
       zod: 3.25.76
     devDependencies:
       '@boilerplate/eslint-config': link:../../packages/config/eslint
@@ -136,7 +136,7 @@ importers:
       nodemailer: 6.10.1
       prettier: ^3.0.0
       resend: ^1.0.0
-      superjson: ^1.12.2
+      superjson: ^2.0.0
       typescript: 5.9.2
       zod: 3.25.76
     dependencies:
@@ -148,7 +148,7 @@ importers:
       jsonwebtoken: 9.0.2
       nodemailer: 6.10.1
       resend: 1.1.0
-      superjson: 1.13.3
+      superjson: 2.2.5
       zod: 3.25.76
     devDependencies:
       '@boilerplate/eslint-config': link:../config/eslint
@@ -6324,6 +6324,13 @@ packages:
       is-what: 4.1.16
     dev: false
 
+  /copy-anything/4.0.5:
+    resolution: {integrity: sha512-7Vv6asjS4gMOuILabD3l739tsaxFQmC+a7pLZm02zyvs8p977bL3zEgq3yDk5rn9B0PbYgIv++jmHcuUab4RhA==}
+    engines: {node: '>=18'}
+    dependencies:
+      is-what: 5.5.0
+    dev: false
+
   /core-js-compat/3.32.2:
     resolution: {integrity: sha512-+GjlguTDINOijtVRUxrQOv3kfu9rl+qPNdX2LTbJ/ZyVTuxK+ksVSAGX1nHstu4hrv1En/uPTtWgq2gI5wt4AQ==}
     dependencies:
@@ -8764,6 +8771,11 @@ packages:
     engines: {node: '>=12.13'}
     dev: false
 
+  /is-what/5.5.0:
+    resolution: {integrity: sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw==}
+    engines: {node: '>=18'}
+    dev: false
+
   /is-whitespace/0.3.0:
     resolution: {integrity: sha512-RydPhl4S6JwAyj0JJjshWJEFG6hNye3pZFBRZaTUfZFwGHxzppNaNOVgQuS/E/SlhrApuMXrpnK1EEIXfdo3Dg==}
     engines: {node: '>=0.10.0'}
@@ -8782,8 +8794,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /isbot/5.1.30:
-    resolution: {integrity: sha512-3wVJEonAns1OETX83uWsk5IAne2S5zfDcntD2hbtU23LelSqNXzXs9zKjMPOLMzroCgIjCfjYAEHrd2D6FOkiA==}
+  /isbot/5.1.31:
+    resolution: {integrity: sha512-DPgQshehErHAqSCKDb3rNW03pa2wS/v5evvUqtxt6TTnHRqAG8FdzcSSJs9656pK6Y+NT7K9R4acEYXLHYfpUQ==}
     engines: {node: '>=18'}
     dev: false
 
@@ -11699,6 +11711,13 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       copy-anything: 3.0.5
+    dev: false
+
+  /superjson/2.2.5:
+    resolution: {integrity: sha512-zWPTX96LVsA/eVYnqOM2+ofcdPqdS1dAF1LN4TS2/MWuUpfitd9ctTa87wt4xrYnZnkLtS69xpBdSxVBP5Rm6w==}
+    engines: {node: '>=16'}
+    dependencies:
+      copy-anything: 4.0.5
     dev: false
 
   /supports-color/5.5.0:
