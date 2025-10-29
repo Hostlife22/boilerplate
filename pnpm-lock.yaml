@@ -26,7 +26,7 @@ importers:
       '@boilerplate/ui': workspace:*
       '@fontsource/poppins': ^5.0.0
       '@remix-run/dev': 1.19.3
-      '@remix-run/eslint-config': 2.17.0
+      '@remix-run/eslint-config': 2.17.1
       '@remix-run/node': 1.19.3
       '@remix-run/react': 1.19.3
       '@remix-run/serve': 1.19.3
@@ -101,7 +101,7 @@ importers:
     devDependencies:
       '@boilerplate/eslint-config': link:../../packages/config/eslint
       '@remix-run/dev': 1.19.3_@remix-run+serve@1.19.3
-      '@remix-run/eslint-config': 2.17.0_gsxvxz64da2qm76ad5icz5ne5u
+      '@remix-run/eslint-config': 2.17.1_gsxvxz64da2qm76ad5icz5ne5u
       '@tailwindcss/forms': 0.5.6_tailwindcss@3.4.17
       '@types/bcryptjs': 2.4.6
       '@types/jsonwebtoken': 9.0.10
@@ -3047,7 +3047,7 @@ packages:
     resolution: {integrity: sha512-8KG5RD0GVP4ydEzRn/I4BNDuxDtqVbOdm8675T49OIG/NGhaK0pjPX7ZcDlvKYbA+ulvVK3ztfcF4uBdOxuJbQ==}
     dependencies:
       '@gar/promisify': 1.1.3
-      semver: 7.6.3
+      semver: 7.7.2
     dev: true
 
   /@npmcli/move-file/1.1.2:
@@ -4076,8 +4076,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@remix-run/eslint-config/2.17.0_gsxvxz64da2qm76ad5icz5ne5u:
-    resolution: {integrity: sha512-32bOczqWqgvoMxCgCXPNV6acaRHeVskmAJf1LIY6+TWCwCHFbkMcT6zB16I3/3tQ98UvZIa5tumnFlypTgMGwg==}
+  /@remix-run/eslint-config/2.17.1_gsxvxz64da2qm76ad5icz5ne5u:
+    resolution: {integrity: sha512-5JVVOImOx90nPe28GnBkIJRlgqPUX4lSd2MPUf5OxuYjGvd9XaIs/bPphU/iiO34e35BKPb2Ib5Cs6rdLrOm7Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: ^8.0.0
@@ -5394,7 +5394,7 @@ packages:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/typescript-estree': 6.21.0
       eslint: 8.57.1
-      semver: 7.6.3
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5678,7 +5678,7 @@ packages:
       call-bind: 1.0.8
       call-bound: 1.0.4
       define-properties: 1.2.1
-      es-abstract: 1.23.9
+      es-abstract: 1.24.0
       es-errors: 1.3.0
       es-object-atoms: 1.1.1
       es-shim-unscopables: 1.1.0
@@ -5690,8 +5690,8 @@ packages:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
-      es-abstract: 1.23.9
-      es-shim-unscopables: 1.0.2
+      es-abstract: 1.24.0
+      es-shim-unscopables: 1.1.0
     dev: true
 
   /array.prototype.flatmap/1.3.3:
@@ -5700,8 +5700,8 @@ packages:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
-      es-abstract: 1.23.9
-      es-shim-unscopables: 1.0.2
+      es-abstract: 1.24.0
+      es-shim-unscopables: 1.1.0
     dev: true
 
   /array.prototype.tosorted/1.1.2:
@@ -6030,14 +6030,6 @@ packages:
       es-define-property: 1.0.1
       get-intrinsic: 1.3.0
       set-function-length: 1.2.2
-
-  /call-bound/1.0.3:
-    resolution: {integrity: sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind-apply-helpers: 1.0.2
-      get-intrinsic: 1.3.0
-    dev: true
 
   /call-bound/1.0.4:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
@@ -6838,63 +6830,6 @@ packages:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
 
-  /es-abstract/1.23.9:
-    resolution: {integrity: sha512-py07lI0wjxAC/DcfK1S6G7iANonniZwTISvdPzk9hzeH0IZIshbuuFxLIU96OyF89Yb9hiqWn8M/bY83KY5vzA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      array-buffer-byte-length: 1.0.2
-      arraybuffer.prototype.slice: 1.0.4
-      available-typed-arrays: 1.0.7
-      call-bind: 1.0.8
-      call-bound: 1.0.4
-      data-view-buffer: 1.0.2
-      data-view-byte-length: 1.0.2
-      data-view-byte-offset: 1.0.1
-      es-define-property: 1.0.1
-      es-errors: 1.3.0
-      es-object-atoms: 1.1.1
-      es-set-tostringtag: 2.1.0
-      es-to-primitive: 1.3.0
-      function.prototype.name: 1.1.8
-      get-intrinsic: 1.3.0
-      get-proto: 1.0.1
-      get-symbol-description: 1.1.0
-      globalthis: 1.0.4
-      gopd: 1.2.0
-      has-property-descriptors: 1.0.2
-      has-proto: 1.2.0
-      has-symbols: 1.1.0
-      hasown: 2.0.2
-      internal-slot: 1.1.0
-      is-array-buffer: 3.0.5
-      is-callable: 1.2.7
-      is-data-view: 1.0.2
-      is-regex: 1.2.1
-      is-shared-array-buffer: 1.0.4
-      is-string: 1.1.1
-      is-typed-array: 1.1.15
-      is-weakref: 1.1.1
-      math-intrinsics: 1.1.0
-      object-inspect: 1.13.4
-      object-keys: 1.1.1
-      object.assign: 4.1.7
-      own-keys: 1.0.1
-      regexp.prototype.flags: 1.5.4
-      safe-array-concat: 1.1.3
-      safe-push-apply: 1.0.0
-      safe-regex-test: 1.1.0
-      set-proto: 1.0.0
-      string.prototype.trim: 1.2.10
-      string.prototype.trimend: 1.0.9
-      string.prototype.trimstart: 1.0.8
-      typed-array-buffer: 1.0.3
-      typed-array-byte-length: 1.0.3
-      typed-array-byte-offset: 1.0.4
-      typed-array-length: 1.0.7
-      unbox-primitive: 1.1.0
-      which-typed-array: 1.1.19
-    dev: true
-
   /es-abstract/1.24.0:
     resolution: {integrity: sha512-WSzPgsdLtTcQwm4CROfS5ju2Wa1QQcVeT37jFjYzdFz1r9ahadC8B8/a4qxJxM+09F18iumCdRmlr96ZYkQvEg==}
     engines: {node: '>= 0.4'}
@@ -7010,12 +6945,6 @@ packages:
       get-intrinsic: 1.3.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
-
-  /es-shim-unscopables/1.0.2:
-    resolution: {integrity: sha512-J3yBRXCzDu4ULnQwxyToo/OjdMx6akgVC7K6few0a7F/0wLtmKKN7I73AH5T2836UuXRqN7Qg+IIUw/+YJksRw==}
-    dependencies:
-      hasown: 2.0.2
-    dev: true
 
   /es-shim-unscopables/1.1.0:
     resolution: {integrity: sha512-d9T8ucsEhh8Bi1woXCf+TIKDIROLG5WCkxg8geBCbvk22kzwC5G2OnXVMO6FUsvQlgUUXQ2itephWDLqDzbeCw==}
@@ -9893,7 +9822,7 @@ packages:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
-      es-abstract: 1.23.9
+      es-abstract: 1.24.0
       es-object-atoms: 1.1.1
     dev: true
 
@@ -9903,7 +9832,7 @@ packages:
     dependencies:
       call-bind: 1.0.8
       define-properties: 1.2.1
-      es-abstract: 1.23.9
+      es-abstract: 1.24.0
     dev: true
 
   /object.hasown/1.1.3:
@@ -9918,7 +9847,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.8
-      call-bound: 1.0.3
+      call-bound: 1.0.4
       define-properties: 1.2.1
       es-object-atoms: 1.1.1
     dev: true
@@ -11602,7 +11531,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.8
-      call-bound: 1.0.3
+      call-bound: 1.0.4
       define-properties: 1.2.1
       es-object-atoms: 1.1.1
     dev: true
@@ -12242,7 +12171,7 @@ packages:
     dependencies:
       browserslist: 4.21.10
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: 1.1.1
     dev: true
 
   /uri-js/4.4.1:
