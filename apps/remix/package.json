@@ -41,7 +41,7 @@
     "jsonwebtoken": "9.0.2",
     "lucide-react": "^0.548.0",
     "nprogress": "^0.2.0",
-    "query-string": "^8.1.0",
+    "query-string": "^9.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-dropzone": "14.3.8",
