@@ -25,10 +25,10 @@
   },
   "devDependencies": {
     "@boilerplate/eslint-config": "workspace:*",
-    "@types/bcryptjs": "^2.4.2",
+    "@types/bcryptjs": "^3.0.0",
     "@types/jsonwebtoken": "9.0.10",
-    "@types/node": "^18.15.3",
-    "@types/nodemailer": "6.4.21",
+    "@types/node": "^24.0.0",
+    "@types/nodemailer": "7.0.3",
     "dotenv-cli": "^7.1.0",
     "eslint": "8.57.1",
     "prettier": "^3.0.0",
