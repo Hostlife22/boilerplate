@@ -30,7 +30,7 @@
     "@types/node": "^18.15.3",
     "@types/nodemailer": "6.4.21",
     "dotenv-cli": "^7.1.0",
-    "eslint": "8.57.1",
+    "eslint": "9.39.0",
     "prettier": "^3.0.0",
     "typescript": "5.9.3"
   }
